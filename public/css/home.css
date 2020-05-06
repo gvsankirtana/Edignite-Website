@@ -1,0 +1,831 @@
+
+*{
+     margin:0;
+     padding:0;
+    
+}
+body{
+     background-color: rebeccapurple;
+}
+#header{
+     padding-top: 80px;
+     padding-bottom: 500px;
+     background-image: url("https://i.postimg.cc/FstYCmgX/Blur-Image-5-5-2020-5-54-53.jpg");
+     background-repeat: no-repeat;
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: cover;
+}
+.container{
+     margin-right: 50px;
+     margin-left: 50px;
+}
+.logo{
+     margin-top: 10px;
+     width:100px;
+}
+.header-text{
+     max-width: 340px;
+     margin-top: 170px;
+     margin-left: 100px;
+     margin-bottom: 100px;
+     text-shadow: 3px 2px black;
+
+}
+h1{
+     font-size:40px ;
+     color:white;
+}
+.square{
+     height:12px;
+     width:12px;
+     display:inline-block;
+     background: green;
+     margin: 15px 0;
+}
+.common-btn{
+     padding:10px 20px 20px;
+     background: transparent;
+     outline: none;
+     border:2px solid red;
+     font-weight: bold;
+     cursor: pointer;
+     text-transform: uppercase;
+}
+p big i{
+     font-size: 20px;
+     line-height: 18px;
+     color:lightgreen;
+}
+.header-text button{
+     margin-top: 20px;
+     margin-bottom: 60px;
+}
+.line-1{
+     width: 15px;
+     height:15px;
+     background:red;
+     display:inline-block;
+ 
+}
+.line-2{
+     width:80px;
+     height:1px;
+     background:red ;
+     display:inline-block;
+}
+.line-3{
+     width:60px;
+     height:1px;
+     background:red ;
+     display: inline-block;
+}
+.line{
+     line-height: 8px;
+}
+#side{
+     width:250px;
+     height:700px;
+     position: fixed;
+     right:-250px;
+     top:0;
+     background-color:rebeccapurple;
+     z-index: 2;
+     transition: 2s;
+     overflow-y: scroll;
+}
+nav ul li{
+     list-style: none;
+     margin:50px 20px;
+}
+nav ul li a{
+     text-transform: uppercase;
+     text-decoration: none;
+     color: white;
+}
+a:hover{
+     background-color:yellow;
+}
+#menu{
+     width:50px;
+     position: fixed;
+     right: 65px;
+     top:35px;
+     z-index:2;
+     cursor:pointer;
+}
+#about{
+     padding:200px 0;
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-color: rebeccapurple;
+     filter: brightness(40%);
+     filter:grayscale(10%);
+     background-position: center;
+     background-size: cover;
+}
+.right{
+     flex-basis: 50%;
+     text-align: right;
+
+}
+q blockquote big {
+     font-size: 15px;
+     line-height: 20px;
+     color:ghostwhite;
+}
+.text h2{ 
+     margin:50px 0 10px;
+     font-size:28px;
+     font-style:italic;
+}
+.text h3{
+     font-size:20px;
+     font-style: italic;
+     columns: #797979;
+}
+#features{
+     padding-top: 60px;
+     padding-bottom:60px ;
+     background-color: yellow;
+     background-image: url("file:///C:/Users/SANKIRTANA/Downloads/20200409_145537%20(1).jpg");
+}
+.row{
+     width: 80%;
+     margin:auto;
+     display:flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-wrap: wrap;
+}
+.col{
+     flex-basis: 25%;
+     text-align: center;
+}
+.col img{
+     width:100px;
+
+}
+.col h4{
+     margin-bottom: 15px;
+     font-size: 20px;
+     font-weight: 400px;
+}
+p{
+     color: lightgreen;
+}
+q{
+     color:black;
+}
+h1 big {
+     color:red;
+}
+#map1{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/P5XYKTTr/Blur-Image-5-5-2020-5-20-42-1.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+}
+#map2{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/Wp0Zvh41/Blur-Image-5-5-2020-6-19-17.jpg");
+     background-position: center;
+     background-size: contain;
+}
+#map3{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/P5XYKTTr/Blur-Image-5-5-2020-5-20-42-1.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+}
+#map4{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/PxmnGLhs/20200503-221036-1.jpg");
+     background-position: center;
+     background-size: contain;
+}
+#map5{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/bYZnF37k/Blur-Image-5-5-2020-6-2-40.jpg");
+     background-position: center;
+     background-size: contain;
+}
+#map6{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/9QmFsfDK/Blur-Image-5-5-2020-6-3-12.jpg");
+     background-position: center;
+     background-size: contain;
+}
+#map7{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("");
+     background-position: center;
+     background-size: contain;
+}
+#map8{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/HL0cXN71/Blur-Image-5-5-2020-6-1-47.jpg");
+     background-position: center;
+     background-size: contain;
+}
+#map9{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/htLP5d49/Blur-Image-5-5-2020-6-0-40.jpg");
+     background-position: center;
+     background-size: contain;
+}
+#map10{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/zDQBbNPR/Blur-Image-5-5-2020-6-0-5.jpg");
+     background-position: center;
+     background-size: contain;
+}
+#map11{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/hPCHP4CH/Blur-Image-5-5-2020-6-1-19.jpg");
+     background-position: center;
+     background-size: contain;
+}
+.social{
+     width:50px;
+     position: fixed;
+     top: 75%;
+     left:0;
+     transform: translateY(-50%);
+     z-index:1;
+}
+.social img{
+     display: block;
+     width:30px;
+     margin:0 auto 20px;
+     cursor:pointer;
+}
+#maps{
+     padding-top: 200px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://socialindiagroup.in/assets/images/80066338-129340955195273-7304206887510081536-o-1040x780.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#maps1{
+     padding-top: 200px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/s2V9L9k0/20200421-141558.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#maps2{
+     padding-bottom: 20px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/T1Wrbkbh/20200421-141535-1.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#maps3{
+     padding-top: 70px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/T2Bny9r2/20200506-160641.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#maps4{
+     padding-bottom: 20px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/4yzQMLxq/20200421-141738-2.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#maps5{
+     padding-top: 50px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/Bbc2NjhG/20200421-141711.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#maps6{
+     padding-top: 10px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/HxsLF39n/20200421-141622.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+p big b{
+     color:black;
+}
+h1 big strong{
+     color:black;
+}
+h1 big em{
+     color:black;
+}
+p big i em b{
+     color:lightgreen;
+     display: inline;
+}
+#case{
+     padding-top: 300px;
+     padding-bottom: 300px;
+	 display:flex;
+	 align-items: left;
+     flex-wrap: wrap;
+     background-image: url("");
+     background-color: rebeccapurple;
+	 background-position: center;
+	 background-size: cover;
+	 text-align-last: left;
+	 text-transform: uppercase;
+}
+#case1{
+     padding-top: 300px;
+     padding-bottom: 300px;
+     display:flex;
+     align-items: left;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/DZ7CPqW8/Blur-Image-5-5-2020-5-33-3.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: cover;
+     text-align-last: left;
+     text-transform: uppercase;
+}
+#case2{
+     padding-top: 300px;
+     padding-bottom: 300px;
+     display:flex;
+     align-items: left;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/Jz64Lq8W/Blur-Image-5-5-2020-5-25-6.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: cover;
+     text-align-last: left;
+     text-transform: uppercase;
+}
+#case3{
+     padding-top: 300px;
+     padding-bottom: 300px;
+     display:flex;
+     align-items: left;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/Kcq9t3m8/Blur-Image-5-5-2020-5-25-52.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: cover;
+     text-align-last: left;
+     text-transform: uppercase;
+}
+#case4{
+     padding-top: 300px;
+     padding-bottom: 300px;
+     display:flex;
+     align-items: left;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/9F9fyTyd/Blur-Image-5-5-2020-5-26-35.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: cover;
+     text-align-last: left;
+     text-transform: uppercase;
+}
+#case5{
+     padding-top: 300px;
+     padding-bottom: 300px;
+     display:flex;
+     align-items: left;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/jd8rwSFH/Blur-Image-5-5-2020-5-27-6.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: cover;
+     text-align-last: left;
+     text-transform: uppercase;
+}
+#case6{
+     padding-top: 300px;
+     padding-bottom: 300px;
+     display:flex;
+     align-items: left;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/NjMBpHHC/Blur-Image-5-5-2020-5-27-41.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: cover;
+     text-align-last: left;
+     text-transform: uppercase;
+}
+.text{
+     max-width: 340px;
+     margin-top: 150px;
+     margin-left: 800px;
+     margin-bottom: 100px;
+     text-shadow: 3px 2px blue;
+
+}
+.footer{
+     padding-top: 60px;
+     padding-bottom:60px ;
+     background-color: rebeccapurple;
+}
+.align{
+     text-align: center;
+}
+.topnav {
+     background-color:grey;
+     overflow: hidden;
+  }
+  
+.topnav a {
+     float: left;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 30px;
+     text-decoration: none;
+     font-size: 17px;
+}
+.topnav a:hover {
+     background-color: grey;
+     color: darkred;
+}
+.topnav a.active {
+     background-color: darkred;
+     color:white;
+}
+mark h1{
+     color:white;
+     text-align: center;
+     text-shadow: 3px 2px grey;
+     font-size:  70px;
+     text-align-last: auto;
+     font-weight: bolder;
+}
+ #logon{
+     padding-top: 5px;
+     background-color: rebeccapurple;
+}
+.content {
+     padding: 16px;
+}
+.sticky {
+     position: fixed;
+     top: 0;
+     width: 100%;
+}
+.sticky + .content {
+     padding-top: 60px;
+}
+#navbar {
+     overflow: hidden;
+     background-color:yellow;
+}
+#navbar a {
+     float: left;
+     display: block;
+     color: rebeccapurple;
+     text-align: center;
+     padding: 30px 30px;
+     text-decoration: none;
+     font-size: 17px;
+}
+#navbar a:hover {
+     background-color: #ddd;
+     color: grey;
+}
+#navbar a.active {
+     background-color: purple;
+     color: white;
+}
+#pic{
+     border-radius: 70%;
+}
+#pho{
+     border-radius:50%;
+     align-content: center;
+     top:50px;
+}
+.card {
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+     transition: 0.3s;
+     width: 40%;
+}
+.card:hover {
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.space {
+     padding: 2px 16px;
+}
+#space{
+     height:1500px;
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: cover;
+}
+#food{
+     padding-top: 300px;
+     padding-bottom: 300px;
+     display:flex;
+     align-items: left;
+     flex-wrap: wrap;
+     background-image: url("");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: cover;
+     text-align-last: left;
+     text-transform: uppercase;
+}
+#moment{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://socialindiagroup.in/assets/images/44972009-292370748047689-4393105580726681600-o-1440x1080.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: 1240px;
+     text-transform: uppercase;
+     background-repeat: no-repeat;
+}
+#moment1{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     background-repeat: no-repeat;
+     flex-wrap: wrap;
+     background-image: url("https://socialindiagroup.in/assets/images/75402312-108808777248491-5668541817725911040-o-1280x960.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: 1240px;
+     text-transform: uppercase;
+}
+#moment2{
+     padding-top: 200px;
+     padding-bottom: 200px;
+     background-repeat: no-repeat;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://socialindiagroup.in/assets/images/81157818-133824781413557-6191632816782966784-o-958x1280.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: 1000px;
+     text-transform: uppercase;
+}
+#moment3{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://socialindiagroup.in/assets/images/80066338-129340955195273-7304206887510081536-o-1040x780.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: 1240px;
+     text-transform: uppercase;
+     background-repeat: no-repeat;
+}
+#moment4{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://socialindiagroup.in/assets/images/43137292-284467975504633-2072518940923265024-o-1440x1080.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: 1240px;
+     background-repeat: no-repeat;
+}
+#moment5{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://socialindiagroup.in/assets/images/42993573-283703902247707-1091386009213468672-o-1440x1080.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: 1240px;
+     background-repeat: no-repeat;
+}
+.join{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+h2 big{
+     color:white;
+     text-shadow: rgba(0,0,0,0.2);
+}
+   #side a, .dropdown-btn {
+     padding: 6px 8px 6px 16px;
+     text-decoration: none;
+     font-size: 20px;
+     color: white;
+     display: block;
+     border: none;
+     background: none;
+     width: 100%;
+     text-align: left;
+     cursor: pointer;
+     outline: none;
+   }
+   
+   #side a:hover, .dropdown-btn:hover {
+     color: yellow;
+   }
+   .main {
+     margin-left: 200px; 
+     font-size: 20px; 
+     padding: 0px 10px;
+   }
+   .active {
+     background-color: yellow;
+     color: white;
+   }
+   .dropdown-container {
+     display: none;
+     background-color: rebeccapurple;
+     padding-left: 8px;
+   }
+   .fa-caret-down {
+     float: right;
+     padding-right: 8px;
+   }
+   @media screen and (max-height: 450px) {
+     #side {padding-top: 15px;}
+     #side a {font-size: 18px;}
+   }
+   .contact{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/mTq4Gphs/edignitelogo-png.jpg");
+     background-color: rebeccapurple;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#aboutus{
+     padding-top: 0px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-color: rebeccapurple;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#aboutus2{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-color: rebeccapurple;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#aboutus3{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-color: rebeccapurple;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+.place{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-color: rebeccapurple;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#case7{
+     padding-top: 300px;
+     padding-bottom: 300px;
+     display:flex;
+     align-items: left;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/8c2PqPgf/Blur-Image-5-5-2020-5-28-8.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: cover;
+     text-align-last: left;
+     text-transform: uppercase;
+}
+#case8{
+     padding-top: 300px;
+     padding-bottom: 300px;
+     display:flex;
+     align-items: left;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/WbcdWXNW/Blur-Image-5-5-2020-5-32-26.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: cover;
+     text-align-last: left;
+     text-transform: uppercase;
+}
