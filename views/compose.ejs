@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+   
+</head>
+<body>
+  <section id="logon">
+  <img src="https://i.postimg.cc/mTq4Gphs/edignitelogo-png.jpg" class="logo">
+  <mark><h1>EDIGNITE-GROUPS</h1></mark> 
+  </section>
+  <div id="navbar">
+    <a class="active" href="/" href="javascript:void(0)">Home</a>
+    <a href="/compose" href="javascript:void(0)">join now</a>
+    <a  href="/about" href="javascript:void(0)">About us</a>
+    <a  href="/contact" href="javascript:void(0)">contact us</a>
+    <a  href="/feedback" href="javascript:void(0)">Moments</a>
+  </div>
+<script>
+  window.onscroll = function() {myFunction()};
+
+   var navbar = document.getElementById("navbar");
+   var sticky = navbar.offsetTop;
+
+  function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    </script>
+   <section class="join">
+    <div class="container">
+      <h2><big>Join as a volunteer</big></h2>
+      <form action="/compose" method="POST" autocomplete="off">
+        <div class="form-group">
+          <label for="name"><p><big>Name:</p></big></label>
+          <input type="text" class="form-control" id="text" placeholder="Enter name" name="name">
+        </div>
+        <div class="form-group">
+          <label for="email"><p><big>Email:</p></big></label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="phone"><p><big>Phone number:</p></big></label>
+          <input type="text" class="form-control" id="phone" placeholder="Enter phonenumber" name="phone">
+        </div>
+        <div class="form-group">
+          <label for="occ"><p><big>Occupation:</p></big></label>
+          <input type="text" class="form-control" id="occ" placeholder="Enter your occupation"  name="occ">
+        </div>
+        <div class="form-group">
+          <label for="work"><p><big>work experience:</p></big></label>
+          <br><textarea name="work" id="work" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="intro"><p><big>short introduction about yourself:</p></big></label>
+         <br><textarea name="intro" id="intro" cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="hi"><p><big>write about your hobbies/interests:</p></big></label>
+          <br><textarea name="hi" id="hi" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">JOIN</button>
+      </form>
+    </div>                     
+</section>
+    <div class="social">
+      <a href="https://www.instagram.com/invites/contact/?i=1uc91cbq7mh66&utm_content=6wctbpu"><img src="http://pluspng.com/img-png/instagram-png-instagram-icon-png-50-px-512.png"></img></a>
+      <a href="https://m.facebook.com/socialindiagroup.in/?ref=bookmarks"><img src="https://www.expectmorearizona.org/wp-content/uploads/2016/11/facebook-png-icon-follow-us-facebook-1.png"></img></a>
+      <a href="https://www.linkedin.com/in/ed-ignite-6767071a3"><img src="https://sguru.org/wp-content/uploads/2018/02/linkedin-png-linkedin-icon-1600.png"></img></a>
+      <a href="https://youtu.be/HGlA2UV-lQI"><img src="http://logok.org/wp-content/uploads/2014/08/Youtube-logo-2017.png"></img></a>
+      <a href="https://twitter.com/Edignite1?s=08"><img src="https://acxcom.files.wordpress.com/2015/04/twitter_logo_blue.png"></img></a>
+      <a href="https://pin.it/klcFa7D"><img src="http://pngimg.com/uploads/pinterest/pinterest_PNG63.png"></img></a>
+      <a href="https://en.wikipedia.org/wiki/Edignite"><img src="https://hotforsecurity.bitdefender.com/wp-content/uploads/2015/08/Wikipedia-en-logo-ball-upright-hole.png"></img></a>
+    </div>
+    <section id="features">
+        <div class="row">
+            <div class="col">
+            <img src="https://img.pngio.com/collection-of-free-transparent-logo-book-download-on-ui-ex-png-books-black-and-white-400_400.png"></img>
+            <h4>Education</h4>
+            <q>Provides education to those who can't afford</q>
+            </div>
+            <div class="col">
+            <img src="https://www.shareicon.net/data/512x512/2016/02/27/725856_people_512x512.png"></img>
+            <h4>Children</h4>
+            <q>children are the future </q>
+            </div>
+            <div class="col">
+            <img src="https://cdn4.iconfinder.com/data/icons/significon/512/Significon-Bulb-512.png"></img>
+            <h4>enlightment</h4>
+            <q>Education is the powerful weapon to change the world</q>
+            </div>
+            <div class="col">
+                <img src="https://image.flaticon.com/icons/png/512/27/27705.png"></img>
+                <h4>NGO</h4>
+                <q>Edignite is a NGO group</q>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="footer">
+    <div class="align">
+    <p> @2020 Edignite Made by @Sankirtana</p>
+     </div>  
+  </section>
+</div>
+</body>
+</html>
