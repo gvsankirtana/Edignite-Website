@@ -11,7 +11,9 @@ var app = express();
 var exphbs  = require('express-handlebars');
 app.set('views', path.join(__dirname,'/views/'));
 var router = express.Router;
-app.set('view engine', 'ejs');
+//app.set('view engine', 'ejs');
+app.engine('html', require('ejs').renderFile);
+ app.set('view engine', 'html');
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
