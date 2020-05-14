@@ -90,3 +90,6 @@ app.get("/contact",function(req,res){
 app.get("/feedback",function(req,res){
   res.render("feedback");
 });
+app.get("/team",function(req,res){
+  res.render("team");
+});
