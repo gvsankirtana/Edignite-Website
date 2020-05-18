@@ -315,8 +315,8 @@ h1 big {
      cursor:pointer;
 }
 #maps{
-     padding-top: 100px;
-     padding-bottom: 100px;
+     padding-top: 115px;
+     padding-bottom: 115px;
      display:flex;
      align-items: center;
      flex-wrap: wrap;
@@ -327,8 +327,8 @@ h1 big {
      text-transform: uppercase;
 }
 #maps1{
-     padding-top: 100px;
-     padding-bottom: 100px;
+     padding-top: 120px;
+     padding-bottom: 120px;
      display:flex;
      align-items: center;
      flex-wrap: wrap;
@@ -339,7 +339,8 @@ h1 big {
      text-transform: uppercase;
 }
 #maps2{
-     padding-bottom: 20px;
+     padding-bottom: 0px;
+     padding-top: 5px;
      display:flex;
      align-items: center;
      flex-wrap: wrap;
@@ -350,7 +351,7 @@ h1 big {
      text-transform: uppercase;
 }
 #maps3{
-     padding-top: 70px;
+     padding-top: 40px;
      padding-bottom: 100px;
      display:flex;
      align-items: center;
@@ -362,7 +363,6 @@ h1 big {
      text-transform: uppercase;
 }
 #maps4{
-     padding-bottom: 20px;
      display:flex;
      align-items: center;
      flex-wrap: wrap;
@@ -373,7 +373,7 @@ h1 big {
      text-transform: uppercase;
 }
 #maps5{
-     padding-top: 50px;
+     padding-top: 10px;
      padding-bottom: 100px;
      display:flex;
      align-items: center;
@@ -385,7 +385,6 @@ h1 big {
      text-transform: uppercase;
 }
 #maps6{
-     padding-top: 10px;
      padding-bottom: 100px;
      display:flex;
      align-items: center;
