@@ -7,9 +7,18 @@
 body{
      background-color: rebeccapurple;
 }
+#header1{
+     padding-top: 400px;
+     padding-bottom: 400px;
+     background-image: url("https://i.postimg.cc/PJxt474C/edignite-nice-pic.jpg");
+     background-repeat: no-repeat;
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: cover; 
+}
 #header{
      padding-top: 80px;
-     padding-bottom: 500px;
+     padding-bottom: 50px;
      background-image: url("https://i.postimg.cc/FstYCmgX/Blur-Image-5-5-2020-5-54-53.jpg");
      background-repeat: no-repeat;
      background-color: rebeccapurple;
@@ -189,7 +198,6 @@ h1 big {
      flex-wrap: wrap;
      background-image: url("https://i.postimg.cc/P5XYKTTr/Blur-Image-5-5-2020-5-20-42-1.jpg");
      background-position: center;
-     background-repeat: no-repeat;
      background-size: contain;
 }
 #map2{
@@ -210,7 +218,6 @@ h1 big {
      flex-wrap: wrap;
      background-image: url("https://i.postimg.cc/P5XYKTTr/Blur-Image-5-5-2020-5-20-42-1.jpg");
      background-position: center;
-     background-repeat: no-repeat;
      background-size: contain;
 }
 #map4{
@@ -308,24 +315,24 @@ h1 big {
      cursor:pointer;
 }
 #maps{
-     padding-top: 200px;
+     padding-top: 100px;
      padding-bottom: 100px;
      display:flex;
      align-items: center;
      flex-wrap: wrap;
-     background-image: url("https://socialindiagroup.in/assets/images/80066338-129340955195273-7304206887510081536-o-1040x780.jpg");
+     background-image: url("https://i.postimg.cc/gJwxnbTc/Blur-Image-13-5-2020-7-51-38.jpg");
      background-color: rebeccapurple;
      background-position: center;
      background-size: contain;
      text-transform: uppercase;
 }
 #maps1{
-     padding-top: 200px;
+     padding-top: 100px;
      padding-bottom: 100px;
      display:flex;
      align-items: center;
      flex-wrap: wrap;
-     background-image: url("https://i.postimg.cc/s2V9L9k0/20200421-141558.jpg");
+     background-image: url("https://i.postimg.cc/P5N2fPQB/Blur-Image-13-5-2020-8-0-37.jpg");
      background-color: rebeccapurple;
      background-position: center;
      background-size: contain;
@@ -336,7 +343,7 @@ h1 big {
      display:flex;
      align-items: center;
      flex-wrap: wrap;
-     background-image: url("https://i.postimg.cc/T1Wrbkbh/20200421-141535-1.jpg");
+     background-image: url("https://i.postimg.cc/XqGY7KXr/Blur-Image-13-5-2020-8-1-41.jpg");
      background-color: rebeccapurple;
      background-position: center;
      background-size: contain;
@@ -348,7 +355,7 @@ h1 big {
      display:flex;
      align-items: center;
      flex-wrap: wrap;
-     background-image: url("https://i.postimg.cc/T2Bny9r2/20200506-160641.jpg");
+     background-image: url("https://i.postimg.cc/5NWXNGq1/Blur-Image-13-5-2020-7-59-14.jpg");
      background-color: rebeccapurple;
      background-position: center;
      background-size: contain;
@@ -359,7 +366,7 @@ h1 big {
      display:flex;
      align-items: center;
      flex-wrap: wrap;
-     background-image: url("https://i.postimg.cc/4yzQMLxq/20200421-141738-2.jpg");
+     background-image: url("https://i.postimg.cc/FK4dW6zD/Blur-Image-13-5-2020-8-2-26.jpg");
      background-color: rebeccapurple;
      background-position: center;
      background-size: contain;
@@ -371,7 +378,7 @@ h1 big {
      display:flex;
      align-items: center;
      flex-wrap: wrap;
-     background-image: url("https://i.postimg.cc/Bbc2NjhG/20200421-141711.jpg");
+     background-image: url("https://i.postimg.cc/9fsW-gRLV/Blur-Image-13-5-2020-8-3-3.jpg");
      background-color: rebeccapurple;
      background-position: center;
      background-size: contain;
@@ -383,7 +390,8 @@ h1 big {
      display:flex;
      align-items: center;
      flex-wrap: wrap;
-     background-image: url("https://i.postimg.cc/HxsLF39n/20200421-141622.jpg");
+     background-image: url("https://i.postimg.cc/rwpYdhMZ/Blur-Image-13-5-2020-8-3-44.jpg");
+     
      background-color: rebeccapurple;
      background-position: center;
      background-size: contain;
@@ -618,7 +626,7 @@ mark h1{
      display:flex;
      align-items: center;
      flex-wrap: wrap;
-     background-image: url("https://socialindiagroup.in/assets/images/44972009-292370748047689-4393105580726681600-o-1440x1080.jpg");
+     /*background-image: url("https://i.postimg.cc/tTz3PsSX/IMG-20200421-WA0012-1.jpg");*/
      background-color: rebeccapurple;
      background-position: center;
      background-size: 1240px;
@@ -632,7 +640,7 @@ mark h1{
      align-items: center;
      background-repeat: no-repeat;
      flex-wrap: wrap;
-     background-image: url("https://socialindiagroup.in/assets/images/75402312-108808777248491-5668541817725911040-o-1280x960.jpg");
+     background-image: url("https://i.postimg.cc/Jh0VSXXF/IMG-20200423-WA0045.jpg");
      background-color: rebeccapurple;
      background-position: center;
      background-size: 1240px;
@@ -645,7 +653,7 @@ mark h1{
      display:flex;
      align-items: center;
      flex-wrap: wrap;
-     background-image: url("https://socialindiagroup.in/assets/images/81157818-133824781413557-6191632816782966784-o-958x1280.jpg");
+     background-image: url("https://i.postimg.cc/Jh0VSXXF/IMG-20200423-WA0045.jpg");
      background-color: rebeccapurple;
      background-position: center;
      background-size: 1000px;
@@ -657,7 +665,7 @@ mark h1{
      display:flex;
      align-items: center;
      flex-wrap: wrap;
-     background-image: url("https://socialindiagroup.in/assets/images/80066338-129340955195273-7304206887510081536-o-1040x780.jpg");
+     background-image: url("https://i.postimg.cc/HLVR6gDD/IMG-20200423-WA0044.jpg");
      background-color: rebeccapurple;
      background-position: center;
      background-size: 1240px;
@@ -670,7 +678,7 @@ mark h1{
      display:flex;
      align-items: center;
      flex-wrap: wrap;
-     background-image: url("https://socialindiagroup.in/assets/images/43137292-284467975504633-2072518940923265024-o-1440x1080.jpg");
+     background-image: url("https://i.postimg.cc/W1ffFHD9/IMG-20200421-WA0006-1.jpg");
      background-color: rebeccapurple;
      background-position: center;
      background-size: 1240px;
@@ -682,7 +690,7 @@ mark h1{
      display:flex;
      align-items: center;
      flex-wrap: wrap;
-     background-image: url("https://socialindiagroup.in/assets/images/42993573-283703902247707-1091386009213468672-o-1440x1080.jpg");
+     background-image: url("https://i.postimg.cc/9QSJFwSK/IMG-20200412-WA0008.jpg");
      background-color: rebeccapurple;
      background-position: center;
      background-size: 1240px;
@@ -827,5 +835,126 @@ h2 big{
      background-position: center;
      background-size: cover;
      text-align-last: left;
+     text-transform: uppercase;
+}
+#teammem{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     padding-left: 350px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/hPPZtGWr/polygons-2048x1536-network-blue-hd-11843.jpg");
+     background-color: yellow;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#teammem1{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/hPPZtGWr/polygons-2048x1536-network-blue-hd-11843.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#teammem2{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/hPPZtGWr/polygons-2048x1536-network-blue-hd-11843.jpg");
+     background-color: yellow;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#teammem3{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/hPPZtGWr/polygons-2048x1536-network-blue-hd-11843.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#teammem4{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/hPPZtGWr/polygons-2048x1536-network-blue-hd-11843.jpg");
+     background-color: yellow;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#teammem5{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/hPPZtGWr/polygons-2048x1536-network-blue-hd-11843.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#teammem6{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/hPPZtGWr/polygons-2048x1536-network-blue-hd-11843.jpg");
+     background-color: yellow;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#teammem7{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/hPPZtGWr/polygons-2048x1536-network-blue-hd-11843.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#teammem8{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-color: yellow;
+     background-image: url("https://i.postimg.cc/hPPZtGWr/polygons-2048x1536-network-blue-hd-11843.jpg");
+     background-position: center;
+     background-size: contain;
+     text-transform: uppercase;
+}
+#teammem9{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     display:flex;
+     align-items: center;
+     flex-wrap: wrap;
+     background-image: url("https://i.postimg.cc/FFJn64WN/IMG-20200508-WA0004.jpg");
+     background-color: rebeccapurple;
+     background-position: center;
+     background-size: contain;
      text-transform: uppercase;
 }
