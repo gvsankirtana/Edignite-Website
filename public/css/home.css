@@ -198,7 +198,8 @@ h1 big {
      flex-wrap: wrap;
      background-image: url("https://i.postimg.cc/P5XYKTTr/Blur-Image-5-5-2020-5-20-42-1.jpg");
      background-position: center;
-     background-size: contain;
+     background-size: cover;
+     background-repeat: no-repeat;
 }
 #map2{
      padding-top: 100px;
@@ -208,7 +209,8 @@ h1 big {
      flex-wrap: wrap;
      background-image: url("https://i.postimg.cc/Wp0Zvh41/Blur-Image-5-5-2020-6-19-17.jpg");
      background-position: center;
-     background-size: contain;
+     background-size: cover;
+     background-repeat: no-repeat;
 }
 #map3{
      padding-top: 100px;
@@ -218,7 +220,8 @@ h1 big {
      flex-wrap: wrap;
      background-image: url("https://i.postimg.cc/P5XYKTTr/Blur-Image-5-5-2020-5-20-42-1.jpg");
      background-position: center;
-     background-size: contain;
+     background-size: cover;
+     background-repeat: no-repeat;
 }
 #map4{
      padding-top: 100px;
@@ -228,7 +231,8 @@ h1 big {
      flex-wrap: wrap;
      background-image: url("https://i.postimg.cc/PxmnGLhs/20200503-221036-1.jpg");
      background-position: center;
-     background-size: contain;
+     background-size: cover;
+     background-repeat: no-repeat;
 }
 #map5{
      padding-top: 100px;
@@ -238,7 +242,8 @@ h1 big {
      flex-wrap: wrap;
      background-image: url("https://i.postimg.cc/bYZnF37k/Blur-Image-5-5-2020-6-2-40.jpg");
      background-position: center;
-     background-size: contain;
+     background-size: cover;
+     background-repeat: no-repeat;
 }
 #map6{
      padding-top: 100px;
@@ -248,7 +253,8 @@ h1 big {
      flex-wrap: wrap;
      background-image: url("https://i.postimg.cc/9QmFsfDK/Blur-Image-5-5-2020-6-3-12.jpg");
      background-position: center;
-     background-size: contain;
+     background-size: cover;
+     background-repeat: no-repeat;
 }
 #map7{
      padding-top: 100px;
@@ -258,7 +264,8 @@ h1 big {
      flex-wrap: wrap;
      background-image: url("");
      background-position: center;
-     background-size: contain;
+     background-size: cover;
+     background-repeat: no-repeat;
 }
 #map8{
      padding-top: 100px;
@@ -268,7 +275,8 @@ h1 big {
      flex-wrap: wrap;
      background-image: url("https://i.postimg.cc/HL0cXN71/Blur-Image-5-5-2020-6-1-47.jpg");
      background-position: center;
-     background-size: contain;
+     background-size: cover;
+     background-repeat: no-repeat;
 }
 #map9{
      padding-top: 100px;
@@ -278,7 +286,8 @@ h1 big {
      flex-wrap: wrap;
      background-image: url("https://i.postimg.cc/htLP5d49/Blur-Image-5-5-2020-6-0-40.jpg");
      background-position: center;
-     background-size: contain;
+     background-size: cover;
+     background-repeat: no-repeat;
 }
 #map10{
      padding-top: 100px;
@@ -288,7 +297,8 @@ h1 big {
      flex-wrap: wrap;
      background-image: url("https://i.postimg.cc/zDQBbNPR/Blur-Image-5-5-2020-6-0-5.jpg");
      background-position: center;
-     background-size: contain;
+     background-size: cover;
+     background-repeat: no-repeat;
 }
 #map11{
      padding-top: 100px;
@@ -298,7 +308,8 @@ h1 big {
      flex-wrap: wrap;
      background-image: url("https://i.postimg.cc/hPCHP4CH/Blur-Image-5-5-2020-6-1-19.jpg");
      background-position: center;
-     background-size: contain;
+     background-size: cover;
+     background-repeat: no-repeat;
 }
 .social{
      width:50px;
@@ -323,7 +334,8 @@ h1 big {
      background-image: url("https://i.postimg.cc/gJwxnbTc/Blur-Image-13-5-2020-7-51-38.jpg");
      background-color: rebeccapurple;
      background-position: center;
-     background-size: contain;
+     background-repeat: repeat;
+     background-size: cover;
      text-transform: uppercase;
 }
 #maps1{
@@ -335,7 +347,8 @@ h1 big {
      background-image: url("https://i.postimg.cc/P5N2fPQB/Blur-Image-13-5-2020-8-0-37.jpg");
      background-color: rebeccapurple;
      background-position: center;
-     background-size: contain;
+     background-size: cover;
+     background-repeat: repeat;
      text-transform: uppercase;
 }
 #maps2{
@@ -346,7 +359,8 @@ h1 big {
      background-image: url("https://i.postimg.cc/XqGY7KXr/Blur-Image-13-5-2020-8-1-41.jpg");
      background-color: rebeccapurple;
      background-position: center;
-     background-size: contain;
+     background-size: cover;
+     background-repeat: repeat;
      text-transform: uppercase;
 }
 #maps3{
@@ -358,17 +372,21 @@ h1 big {
      background-image: url("https://i.postimg.cc/5NWXNGq1/Blur-Image-13-5-2020-7-59-14.jpg");
      background-color: rebeccapurple;
      background-position: center;
-     background-size: contain;
+     background-size: cover;
+     background-repeat: repeat;
      text-transform: uppercase;
 }
 #maps4{
+     padding-top:100px;
+     padding-bottom: 100px;
      display:flex;
      align-items: center;
      flex-wrap: wrap;
      background-image: url("https://i.postimg.cc/FK4dW6zD/Blur-Image-13-5-2020-8-2-26.jpg");
      background-color: rebeccapurple;
      background-position: center;
-     background-size: contain;
+     background-repeat: no-repeat;
+     background-size: cover;
      text-transform: uppercase;
 }
 #maps5{
@@ -380,7 +398,8 @@ h1 big {
      background-image: url("https://i.postimg.cc/9fsW-gRLV/Blur-Image-13-5-2020-8-3-3.jpg");
      background-color: rebeccapurple;
      background-position: center;
-     background-size: contain;
+     background-size: cover;
+     background-repeat: no-repeat;
      text-transform: uppercase;
 }
 #maps6{
@@ -389,10 +408,10 @@ h1 big {
      align-items: center;
      flex-wrap: wrap;
      background-image: url("https://i.postimg.cc/rwpYdhMZ/Blur-Image-13-5-2020-8-3-44.jpg");
-     
+     background-repeat: no-repeat;
      background-color: rebeccapurple;
      background-position: center;
-     background-size: contain;
+     background-size: cover;
      text-transform: uppercase;
 }
 p big b{
