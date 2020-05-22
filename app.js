@@ -17,7 +17,7 @@ app.engine('html', require('ejs').renderFile);
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-mongoose.connect("mongodb+srv://sankirtana_02:chiaroscurist@cluster0-2n9ll.mongodb.net/test?retryWrites=true&w=majority",{ useNewUrlParser: true,useUnifiedTopology: true },function(err){
+mongoose.connect("mongodb+srv://sankirtana_02:edignite2020@cluster0-2n9ll.mongodb.net/test?retryWrites=true&w=majority",{ useNewUrlParser: true,useUnifiedTopology: true },function(err){
   if(!err){
     console.log("connected to mongodb")
   }
