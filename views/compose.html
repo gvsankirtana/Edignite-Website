@@ -13,18 +13,98 @@
    
 </head>
 <body>
-  <section id="logon">
-  <img src="https://i.postimg.cc/mTq4Gphs/edignitelogo-png.jpg" class="logo">
-  <mark><h1>EDIGNITE-GROUPS</h1></mark> 
-  </section>
-  <div id="navbar">
-    <a class="active" href="/" href="javascript:void(0)">Home</a>
-    <a href="/compose" href="javascript:void(0)">join now</a>
-    <a  href="/about" href="javascript:void(0)">About us</a>
-    <a  href="/team" href="javascript:void(0)">Team members</a>
-    <a  href="/contact" href="javascript:void(0)">contact us</a>
-    <a  href="/feedback" href="javascript:void(0)">Moments</a>
-  </div>
+    <script>
+        var menu=document.getElementById("menu");
+        var side=document.getElementById("side");
+        side.style.right="-250px";
+        menu.onclick=function(){
+            if(side.style.right=="-250px"){
+                side.style.right="0px"
+            }
+            else{
+                side.style.right="-250px"
+            }
+        }
+      var scroll = new SmoothScroll('a[href*="#"]');
+      window.onscroll = function() {myFunction()};
+       var navbar = document.getElementById("navbar");
+       var sticky = navbar.offsetTop;
+      function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+      } else {
+      dropdownContent.style.display = "block";
+      }
+      });
+    }
+    let slideIndex = 1;
+        showSlides(slideIndex);
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        setInterval("showSlides(++slideIndex)", 3000);
+        function showSlides(n) {
+            let i, slides, dots;
+            slides = document.getElementsByClassName("carousel-item");
+            dots = document.getElementsByClassName("indicator");
+            if (n > slides.length) {slideIndex = 1;}
+            if (n < 1) {slideIndex = slides.length;}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+    <nav class="navbar navbar-expand-lg static-top"style="background-color:lightgoldenrodyellow;">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+                <img src="https://i.postimg.cc/mTq4Gphs/edignitelogo-png.jpg" style="width:100px;" alt="">
+              </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/"><p  style="color: black;">Home</p>
+                      <span class="sr-only">(current)</span>
+                    </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#aboutus123"><p  style="color: black;">About</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#team"><p  style="color: black;">Team</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#contact1"><p  style="color: black;">Contact</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#carousel-example-2"><p  style="color: black;">Know Us</p></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 <script>
   window.onscroll = function() {myFunction()};
 
@@ -84,7 +164,7 @@
       <a href="https://pin.it/klcFa7D"><img src="http://pngimg.com/uploads/pinterest/pinterest_PNG63.png"></img></a>
       <a href="https://en.wikipedia.org/wiki/Edignite"><img src="https://hotforsecurity.bitdefender.com/wp-content/uploads/2015/08/Wikipedia-en-logo-ball-upright-hole.png"></img></a>
     </div>
-    <section id="features">
+    <center><section id="features">
         <div class="row">
             <div class="col">
             <img src="https://img.pngio.com/collection-of-free-transparent-logo-book-download-on-ui-ex-png-books-black-and-white-400_400.png"></img>
@@ -109,12 +189,116 @@
             </div>
         </div>
         
-    </section>
-    <section class="footer">
-    <div class="align">
-    <p> @2020 Edignite Made by @Sankirtana</p>
-     </div>  
-  </section>
-</div>
+    </section></center>
+  
+    <footer class="page-footer font-small stylish-color-dark pt-4" style="background-color: lightgoldenrodyellow;">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto">
+      
+              <!-- Content -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
+              <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                consectetur
+                adipisicing elit.</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!">Link 4</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!">Link 4</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!">Link 4</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Register for free</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+          </li>
+        </ul>
+        <hr>
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+      </footer>
 </body>
 </html>

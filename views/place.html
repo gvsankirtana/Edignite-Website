@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg static-top"style="background-color:lightgoldenrodyellow;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+            <img src="https://i.postimg.cc/mTq4Gphs/edignitelogo-png.jpg" style="width:100px;" alt="">
+          </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/"><p  style="color: black;">Home</p>
+                  <span class="sr-only">(current)</span>
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#aboutus123" ><p  style="color: black;">About</p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#team"><p  style="color: black;">Team</p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#contact1"><p  style="color: black;">Contact</p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/#carousel-example-2"><p  style="color: black;">Know Us</p></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+     <div class="content">
+      <nav id="side">
+        <ul>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <li><a href="/place">Places We Go</a></li>
+          <br>
+          <br>
+          <br>
+              <li><a href="/helping">Helping Hand</a></li>
+        </ul>
+      </nav>
+        <img src="https://marketing.dcassetcdn.com/blog/2016/March/icons-vs-logos/Hamburger-Icon_300.png" id="menu">
+        <script>
+            var menu=document.getElementById("menu");
+            var side=document.getElementById("side");
+            side.style.right="-250px";
+            menu.onclick=function(){
+                if(side.style.right=="-250px"){
+                    side.style.right="0px"
+                }
+                else{
+                    side.style.right="-250px"
+                }
+            }
+          var scroll = new SmoothScroll('a[href*="#"]');
+          window.onscroll = function() {myFunction()};
+           var navbar = document.getElementById("navbar");
+           var sticky = navbar.offsetTop;
+          function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+        let slideIndex = 1;
+            showSlides(slideIndex);
+            function changeSlide(n) {
+                showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            setInterval("showSlides(++slideIndex)", 3000);
+            function showSlides(n) {
+                let i, slides, dots;
+                slides = document.getElementsByClassName("carousel-item");
+                dots = document.getElementsByClassName("indicator");
+                if (n > slides.length) {slideIndex = 1;}
+                if (n < 1) {slideIndex = slides.length;}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+          <div class="social">
+            <a href="https://www.instagram.com/invites/contact/?i=1uc91cbq7mh66&utm_content=6wctbpu"><img src="http://pluspng.com/img-png/instagram-png-instagram-icon-png-50-px-512.png"></img></a>
+            <a href="https://m.facebook.com/socialindiagroup.in/?ref=bookmarks"><img src="https://www.expectmorearizona.org/wp-content/uploads/2016/11/facebook-png-icon-follow-us-facebook-1.png"></img></a>
+            <a href="https://www.linkedin.com/in/ed-ignite-6767071a3"><img src="https://sguru.org/wp-content/uploads/2018/02/linkedin-png-linkedin-icon-1600.png"></img></a>
+            <a href="https://youtu.be/HGlA2UV-lQI"><img src="http://logok.org/wp-content/uploads/2014/08/Youtube-logo-2017.png"></img></a>
+            <a href="https://twitter.com/Edignite1?s=08"><img src="https://acxcom.files.wordpress.com/2015/04/twitter_logo_blue.png"></img></a>
+            <a href="https://pin.it/klcFa7D"><img src="http://pngimg.com/uploads/pinterest/pinterest_PNG63.png"></img></a>
+            <a href="https://en.wikipedia.org/wiki/Edignite"><img src="https://hotforsecurity.bitdefender.com/wp-content/uploads/2015/08/Wikipedia-en-logo-ball-upright-hole.png"></img></a>
+          </div>
+          <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel" >
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-2" data-slide-to="0"  ></li>
+              <li data-target="#carousel-example-2" data-slide-to="1"></li>
+              <li data-target="#carousel-example-2" data-slide-to="2"></li>
+              <li data-target="#carousel-example-2" data-slide-to="3"></li>
+              <li data-target="#carousel-example-2" data-slide-to="4"></li>
+              <li data-target="#carousel-example-2" data-slide-to="5"></li>
+              <li data-target="#carousel-example-2" data-slide-to="6" class="active"></li>
+            </ol>
+            <!--/.Indicators-->
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="view">
+                  <img class="d-block w-100" src="https://i.postimg.cc/s2V9L9k0/20200421-141558.jpg" alt="First slide" style="width:100px;height:500px;">
+                  <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">E Quarters</h3>
+                  <p style="color:lightcyan">We teach children of the staff of the institute at the E Quarters. The condition here is the least miserable. Children here at least have a concrete shelter over them. The children here get a favourable study environment. But still, this isn't at par with the place where the privileged life. They may improve their lifestyle by studying hard. We hope for the best.....</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                  <img class="d-block w-100" src="https://i.postimg.cc/T1Wrbkbh/20200421-141535-1.jpg" alt="Second slide" style="width:100px;height:500px;">
+                  <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">Edignite Kaksha</h3>
+                  <p style="color: lightcyan;">A piece of good conceptual knowledge from class 8 is a must for laying foundations for career in any field. We thus decided to have a separate place wherein only students from class 8 to class12 are taught . This not only helps them in learning easily with their fellow mates but also helps us to give each student personal attention. We thus give a lot of our efforts in imparting knowledge to the students of Edignite Edignite kaksha and regularly go to teach them at a girl's house near Ichchhanath temple.  
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                  <img class="d-block w-100" src="https://i.postimg.cc/QtF66J5Z/20200421-141510-3.jpg" alt="Third slide" style="width:100px;height:500px;">
+                  <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">Palwal, Gurgaon</h3>
+                  <p style="color: lightcyan;">The founder of the group also teaches children at his hometown Palwal, Haryana and had taught some in Gurgaon, Haryana. The place at Gurgaon was a cowshed. Here the kids are really ignorant and some also not admitted in schools. We hope that these kids strive for gaining a good education and be at a better place then they are now.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                  <img class="d-block w-100" src="https://i.postimg.cc/4yzQMLxq/20200421-141738-2.jpg" alt="Third slide" style="width:100px;height:500px;">
+                  <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">Nilam Society</h3>
+                  <p style="color: lightcyan;">We also teach children living in slums near Nilam society. The condition there is a little less miserable as all the children have a shelter above them. The place is a cluster of huts. But at that place is a garbage heap which is never cleaned up till date. Even the place is shabby one with no sufficient light in the night time. This makes the study environment at the place unfavourable. But ts unfavourable environment also motivates the children living there to study hard and have a better living and a good life to live.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                  <img class="d-block w-100" src="https://i.postimg.cc/Bbc2NjhG/20200421-141711.jpg" alt="Third slide" style="width:100px;height:500px;">
+                  <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">Floral Garden</h3>
+                  <p style="color: lightcyan;">The place we teach is the slums near the floral garden. Just like that of Nilam society, it is a dense cluster of huts. Here we teach children under a shack, a good place to teach them. Once again we would pray to God that these young innocent minds take themselves, their family and nation towards enlightenment.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                  <img class="d-block w-100" src="https://i.postimg.cc/HxsLF39n/20200421-141622.jpg" alt="Third slide" style="width:100px;height:500px;">
+                  <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive">Kargil Chowk</h3>
+                  <p style="color: lightcyan;">This is the place at slums near Kargil Chowk. The place just like the slums near Nilam Society is a dense cluster of shacks with constant water leaks in some houses. The condition here is as miserable as that of Nilam Society. Here we teach 3 to 6 kids either at their home or at a terrace. We hope that the kids study and make living conditions at this place better.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                  <img class="d-block w-100" src="https://i.postimg.cc/zDyDyVd5/20200421-141653-1.jpg"  alt="Third slide" style="width:100px;height:500px;">
+                  <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                  <h3 class="h3-responsive"> CityLights </h3>
+                  <p style="color: lightcyan;">We teach children at city lights area under the road bridge. Some children live in series over huts opposite to it which are just big enough to fit a few people. Many of them also do not have a shelter and have made place under the bridge heir home. Let us hope that these children study hard and take themselves and their families out of this miserable condition.</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--/.Controls-->
+          </div>
+            <center><section id="features">
+            <div class="row">
+                 <div class="col">
+                   <img  src="https://img.pngio.com/collection-of-free-transparent-logo-book-download-on-ui-ex-png-books-black-and-white-400_400.png"></img>
+                     <h4>Education</h4>
+                     <q>Provides education to those who can't afford</q>
+                </div>
+                <div class="col">
+                  <img src="https://www.shareicon.net/data/512x512/2016/02/27/725856_people_512x512.png"></img>
+                  <h4>Children</h4>
+                  <q>children are the future </q>
+                </div>
+                <div class="col">
+                  <img src="https://cdn4.iconfinder.com/data/icons/significon/512/Significon-Bulb-512.png"></img>
+                  <h4>enlightment</h4>
+                  <q>Education is the powerful weapon to change the world</q>
+                </div>
+                <div class="col">
+                    <img src="https://image.flaticon.com/icons/png/512/27/27705.png"></img>
+                    <h4>NGO</h4>
+                    <q>Edignite is a NGO group</q>
+                    </div>
+                </div>
+             </div>
+        </section></center>
+        <footer class="page-footer font-small stylish-color-dark pt-4" style="background-color:lightgoldenrodyellow;">
+          <div class="container text-center text-md-left">
+        
+            <!-- Grid row -->
+            <div class="row">
+        
+              <!-- Grid column -->
+              <div class="col-md-4 mx-auto">
+        
+                <!-- Content -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
+                <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                  consectetur
+                  adipisicing elit.</p>
+        
+              </div>
+              <!-- Grid column -->
+        
+              <hr class="clearfix w-100 d-md-none">
+        
+              <!-- Grid column -->
+              <div class="col-md-2 mx-auto">
+        
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+        
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 3</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 4</a>
+                  </li>
+                </ul>
+        
+              </div>
+              <!-- Grid column -->
+        
+              <hr class="clearfix w-100 d-md-none">
+        
+              <!-- Grid column -->
+              <div class="col-md-2 mx-auto">
+        
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+        
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 3</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 4</a>
+                  </li>
+                </ul>
+        
+              </div>
+              <!-- Grid column -->
+        
+              <hr class="clearfix w-100 d-md-none">
+        
+              <!-- Grid column -->
+              <div class="col-md-2 mx-auto">
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+        
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!">Link 1</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 2</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 3</a>
+                  </li>
+                  <li>
+                    <a href="#!">Link 4</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item">
+              <h5 class="mb-1">Register for free</h5>
+            </li>
+            <li class="list-inline-item">
+              <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+            </li>
+          </ul>
+          <hr>
+          <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+          </div>
+        </footer>
+      </body>
+      </html>      
+    </body>
+    </html>

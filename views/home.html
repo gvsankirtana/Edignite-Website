@@ -6,6 +6,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -13,60 +14,51 @@
    
 </head>
 <body>
-  <section id="logon">
-     <img src="https://i.postimg.cc/mTq4Gphs/edignitelogo-png.jpg" class="logo">
-       <mark><h1>EDIGNITE-GROUPS</h1></mark> 
-  </section>
-  <div id="navbar">
-    <a class="active" href="/" href="javascript:void(0)">Home</a>
-    <a href="/compose" href="javascript:void(0)">join now</a>
-    <a  href="/about" href="javascript:void(0)">About us</a>
-    <a  href="/team" href="javascript:void(0)">Team members</a>
-    <a  href="/contact" href="javascript:void(0)">Contact us</a>
-    <a  href="/feedback" href="javascript:void(0)">Moments</a>
-  </div>
-   <div class="content">
-     <section id="header1">
-     </section>
-<section id="header">
-    <!--<div class="container">-->
-      <!--<img  style="width:400px" src="https://i.postimg.cc/PJxt474C/edignite-nice-pic.jpg">
-      <img  style="width:400px" src="https://i.postimg.cc/PJxt474C/edignite-nice-pic.jpg">-->
-      <!--<div class="carousel-item fade">
-        <img src="https://i.postimg.cc/PJxt474C/edignite-nice-pic.jpg" alt="Nature Autumn">
-        <div class="carousel-caption">
-          <h2>First slide</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-      </div>
-    
-      <div class="carousel-item fade">
-        <img src="https://parrot-tutorial.com/images/nature_autumn_red.jpg" alt="Nature Red">
-        <div class="carousel-caption">
-          <h2>Second slide</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-      </div>
-    
-      <div class="carousel-item fade">
-        <img src="https://parrot-tutorial.com/images/nature_lake.jpg" alt="Mountain">
-        <div class="carousel-caption">
-          <h2>Third slide</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
+  <nav class="navbar navbar-expand-lg static-top"style="background-color:lightgoldenrodyellow;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+            <img src="https://i.postimg.cc/mTq4Gphs/edignitelogo-png.jpg" style="width:100px;" alt="">
+          </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/"><p  style="color: black;">Home</p>
+                  <span class="sr-only">(current)</span>
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus123"><p style="color: black;">About</p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team"><p style="color: black;">Team</p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact1"><p style="color: black;">Contact</p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#carousel-example-2"><p style="color: black;">Know Us</p></a>
+          </li>
+        </ul>
       </div>
     </div>
-    
-     
-    <div class="carousel-control-prev" onclick="changeSlide(-1)">&#10094;</div>
-    <div class="carousel-control-next" onclick="changeSlide(1)">&#10095;</div>
-    
-    <ol class="carousel-indicators">
-      <li class="indicator active" onclick="currentSlide(1)"></li>
-      <li class="indicator" onclick="currentSlide(2)"></li>
-      <li class="indicator" onclick="currentSlide(3)"></li>
-    </ol>
-    </div>-->
+  </nav>
+   <div class="content">
+     <section id="header1">
+        <div class="header-text">
+            <h1 style="font-size: 60px;">EDIGNITE</h1>
+            <p style="font-size: larger;"><big><i style="font-size: larger;">
+              SOCIAL INDIA
+            </p></big></i>  
+  </div>
+        <center><h5 class="mb-1" style="font-size: 40px;color: white;">Join As Volunteer</h5></center>
+      <center><a href="/compose" class="btn btn-danger btn-rounded">Join up!</a> </center>
+ </div>
+</div>
+     </section>
+<section id="header">
         <div class="header-text">
             <h1>Message from founder</h1>
             <span class="square"></span>
@@ -84,67 +76,19 @@
     </div>
 </section>
 <nav id="side">
-    <ul>
-        <li><button class="dropdown-btn">PLACES WE GO
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-          <a href="#maps4">NILAM SOCIETY</a>
-          <a href="#maps">CITYLIGHTS</a>
-          <a href="#maps5">FLORAL GARDEN</a>
-          <a href="#maps1">E QUARTERS</a>
-          <a href="#maps6">KARGIL CHOWK</a>
-          <a href="#maps3">PAWAL,GURGAON</a>
-          <a href="#maps2">EDIGNITE KAKSHA</a>
-        </div></li>
-        <li><button class="dropdown-btn">HELPING HAND
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-          <a href="#case7">CLOTH DISTRIBUTION</a>
-          <a href="#case6">SLIPPER DISTRIBUTION</a>
-          <a href="#case5">STUDY MATERIAL DISTRIBUTION</a>
-          <a href="#case4">BOOK FAIR</a>
-          <a href="#case2">CYCLE DISTRIBUTION</a>
-          <a href="#case3">SCHOOL ADMISSION</a>
-          <a href="#case1">CLEANLINESS DRIVE</a>
-          <a href="#case8">AWARENESS PROGRAM</a>
-        </div>
-      </li>
-        <li><a href="#food">food distribution</a></li>
-        <li><button class="dropdown-btn">MAKING CHILDREN PAR WITH OTHERS
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-          <a href="#map1">COMPETITIVE EXAM PREPARATION</a>
-          <a href="#map2">DANCING,PERFORMANCE,DRAWING COMPETITION,WORKSHOPS</a>
-          <button class="dropdown-btn">STUDENT WELFARE
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-container">
-            <a href="#map3">BUS TRACKING APPLICATION</a>
-          </div>
-        </div>
-      </li>
-      <li><button class="dropdown-btn">CELEBRATING WITH CHILDREN
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-container">
-        <a href="#map5">BIRTHDAY CELEBRATIONS</a>
-        <a href="#map6">FESTIVAL CELEBRATIONS</a>
-      </div>
-    </li>
-        <li><button class="dropdown-btn">EDUCATIONAL INSPIRATION
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-container">
-          <a href="#map11">ABDUL MALIK</a>
-          <a href="#map8">RAJESH KUMAR SHARMA</a>
-          <a href="#map9">ADITYA KUMAR</a>
-          <a href="#map10">ANAND KUMAR</a>
-        </div>
-      </li>
-    </ul>
+  <ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <li><a href="/place">Places We Go</a></li>
+    <br>
+    <br>
+    <br>
+        <li><a href="/helping">Helping Hand</a></li>
+  </ul>
 </nav>
 <img src="https://marketing.dcassetcdn.com/blog/2016/March/icons-vs-logos/Hamburger-Icon_300.png" id="menu">
 <script>
@@ -208,46 +152,6 @@ let slideIndex = 1;
         dots[slideIndex-1].className += " active";
     }
 </script>
-    <section id="place">
-       <img id="pic" style="width:400px"  src="https://i.postimg.cc/zDyDyVd5/20200421-141653-1.jpg" >
-       <img  id="pic" style="width:400px" src="https://i.postimg.cc/s2V9L9k0/20200421-141558.jpg" >
-       <img  id="pic" style="width:400px" src="https://i.postimg.cc/MTMkpjzF/20200421-141711-1.jpg" ><br>
-       <img  id="pic" style="width:400px" src="https://i.postimg.cc/T1Wrbkbh/20200421-141535-1.jpg" >
-       <img  id="pic" style="width:400px" src="https://i.postimg.cc/QtF66J5Z/20200421-141510-3.jpg" >
-       <img  id="pic" style="width:400px" src="https://i.postimg.cc/4yzQMLxq/20200421-141738-2.jpg" >
-       <div class="header-text">
-          <h1><big><em>Places We Go</em></big></h1>
-          <span class="square"></span>
-          <p><big><i>
-            There are many places where we go to teach children. The places they live in are pitiful(a rookery to describe in a word). We can't imagine spending our daily routine in such a muddled place. The places they live in represent the dark side of this beautiful world. We pray to God no more gives this kind of suffering to anyone. Thus teaching children and bringing them and their families to a better place is one of our goals.
-          </p></big></i>
-          <br><br><div class="line">
-              <span class="line-1"></span><br>
-              <span class="line-2"></span><br>
-              <span class="line-3"></span><br>
-          </div>
-       </div>
-     </section>
-  <section id="maps">
-    <img  id="pho" style="width:450px" src="https://i.postimg.cc/zDyDyVd5/20200421-141653-1.jpg" >
-    <div class="header-text">
-        <h1><big><strong> CityLights </strong></big></h1>
-        <span class="square"></span>
-        <p><big><i>
-          We teach children at city lights area under the road bridge. Some children live in series over huts opposite to it which are just big enough to fit a few people. Many of them also do not have a shelter and have made place under the bridge heir home. Let us hope that these children study hard and take themselves and their families out of this miserable condition.
-        </p></big></i>
-        <div class="line">
-            <span class="line-1"></span><br>
-            <span class="line-2"></span><br>
-            <span class="line-3"></span><br>
-        </div>
-    </div>
-</section>
-<br>
-    <br>
-    <br>
-    <br>
-    <br>
     <div class="social">
       <a href="https://www.instagram.com/invites/contact/?i=1uc91cbq7mh66&utm_content=6wctbpu"><img src="http://pluspng.com/img-png/instagram-png-instagram-icon-png-50-px-512.png"></img></a>
       <a href="https://m.facebook.com/socialindiagroup.in/?ref=bookmarks"><img src="https://www.expectmorearizona.org/wp-content/uploads/2016/11/facebook-png-icon-follow-us-facebook-1.png"></img></a>
@@ -257,461 +161,420 @@ let slideIndex = 1;
       <a href="https://pin.it/klcFa7D"><img src="http://pngimg.com/uploads/pinterest/pinterest_PNG63.png"></img></a>
       <a href="https://en.wikipedia.org/wiki/Edignite"><img src="https://hotforsecurity.bitdefender.com/wp-content/uploads/2015/08/Wikipedia-en-logo-ball-upright-hole.png"></img></a>
     </div>
-    <section id="maps1">
-      <img  id="pho" style="width:450px" src="https://i.postimg.cc/s2V9L9k0/20200421-141558.jpg" >
-        <div class="header-text">
-            <h1><big><strong>E Quarters</strong></big></h1>
-            <span class="square"></span>
-            <p><big><i>We teach children of the staff of the institute at the E Quarters. The condition here is the least miserable. Children here at least have a concrete shelter over them. The children here get a favourable study environment. But still, this isn't at par with the place where the privileged life. They may improve their lifestyle by studying hard. We hope for the best.....<big>
-            </p></big></i>
-            <div class="line">
-                <span class="line-1"></span><br>
-                <span class="line-2"></span><br>
-                <span class="line-3"></span><br>
-            </div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  <section id="maps2">
-    <img  id="pho" style="width:450px" src="https://i.postimg.cc/T1Wrbkbh/20200421-141535-1.jpg" >
-        <div class="header-text">
-            <h1><big>Edignite Kaksha</big></h1>
-            <span class="square"></span>
-            <p><big><i><em><b>
-              A piece of good conceptual knowledge from class 8 is a must for laying foundations for career in any field. We thus decided to have a separate place wherein only students from class 8 to class12 are taught . This not only helps them in learning easily with their fellow mates but also helps us to give each student personal attention. We thus give a lot of our efforts in imparting knowledge to the students of Edignite Edignite kaksha and regularly go to teach them at a girl's house near Ichchhanath temple.  
-            </b></em></p></big></i>
-            <div class="line">
-                <span class="line-1"></span><br>
-                <span class="line-2"></span><br>
-                <span class="line-3"></span><br>
-            </div>
-        </div>
-   </section>
-   <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  <section id="maps3">
-    <img  id="pho" style="width:450px" src="https://i.postimg.cc/QtF66J5Z/20200421-141510-3.jpg" >
-    <div class="header-text">
-            <h1><big>Palwal, Gurgaon</big></h1>
-            <span class="square"></span>
-            <p><big><i>The founder of the group also teaches children at his hometown Palwal, Haryana and had taught some in Gurgaon, Haryana. The place at Gurgaon was a cowshed. Here the kids are really ignorant and some also not admitted in schools. We hope that these kids strive for gaining a good education and be at a better place then they are now.
-            </p></big></i>          
-                <div class="line"><br><br>
-                <span class="line-1"></span><br>
-                <span class="line-2"></span><br>
-                <span class="line-3"></span><br>
-            </div>
-        </div>
-   </section>
-   <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  <section id="maps4">
-    <img  id="pho" style="width:450px" src="https://i.postimg.cc/4yzQMLxq/20200421-141738-2.jpg" >
-        <div class="header-text">
-            <h1><big>Nilam Society</big></h1>
-            <span class="square"></span>
-            <p><big><i><em><b>
-              We also teach children living in slums near Nilam society. The condition there is a little less miserable as all the children have a shelter above them. The place is a cluster of huts. But at that place is a garbage heap which is never cleaned up till date. Even the place is shabby one with no sufficient light in the night time. This makes the study environment at the place unfavourable. But ts unfavourable environment also motivates the children living there to study hard and have a better living and a good life to live.
-            </p></big></i></em></b>
-            <div class="line">
-                <span class="line-1"></span><br>
-                <span class="line-2"></span><br>
-                <span class="line-3"></span><br>
-            </div>
-        </div>
-   </section>
-   <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  <section id="maps5">
-    <img  id="pho" style="width:450px" src="https://i.postimg.cc/Bbc2NjhG/20200421-141711.jpg" >
-    <div class="header-text">
-            <h1><big>Floral Garden</big></h1>
-            <span class="square"></span>
-            <p><big><i><em><b>
-              The place we teach is the slums near the floral garden. Just like that of Nilam society, it is a dense cluster of huts. Here we teach children under a shack, a good place to teach them. Once again we would pray to God that these young innocent minds take themselves, their family and nation towards enlightenment.
-            </b></em></i></big></p>
-            <div class="line">
-                <span class="line-1"></span><br>
-                <span class="line-2"></span><br>
-                <span class="line-3"></span><br>
-            </div>
-        </div>    
-      </section>
-      <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section id="maps6">
-      <img  id="pho" style="width:450px" src="https://i.postimg.cc/HxsLF39n/20200421-141622.jpg" >
-        <div class="header-text">
-            <h1><big>Kargil Chowk</big></h1>
-            <span class="square"></span>
-            <p><big><i><em><b>
-              This is the place at slums near Kargil Chowk. The place just like the slums near Nilam Society is a dense cluster of shacks with constant water leaks in some houses. The condition here is as miserable as that of Nilam Society. Here we teach 3 to 6 kids either at their home or at a terrace. We hope that the kids study and make living conditions at this place better.
+    <div class="aboutus-section" style="background-color: lightgoldenrodyellow;"id="aboutus123">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="aboutus">
+                      <h2 class="aboutus-title">About Us</h2>
+                      <p class="aboutus-text">The founder of the group. Prince Verma had been enlightening the necessitous children for two years before the establishment of the group. It was on 16 June 2019 that the official group with the name 'Social India' was started.Since then it has been progressing swiftly and is now enlightening/enlightened over 60 children. It came up with its tagline 'HOPE FOR OTHER' in December 2019. </p>
+                      <p class="aboutus-text"> It was January 2020 when it changed to Edignite Educational and charitable trust and had applied for registering itself as an NGO. Apart from the needy, the group has also thought about the welfare of students of the institute and has come up with many applications, Youtube videos. Notes..for the same. The group now has 20 to 25 volunteers and is still expanding.</p>
+                      <a class="aboutus-more" href="#">read more</a>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="aboutus-banner">
+                      <img src="" alt="">
+                  </div>
+              </div>
+              <div class="col-md-5 col-sm-6 col-xs-12">
+                  <div class="feature">
+                      <div class="feature-box">
+                          <div class="clearfix">
+                              <div class="iconset">
+                                  <span class="glyphicon glyphicon-cog icon"></span>
+                              </div>
+                              <div class="feature-content">
+                                  <h4>About Children</h4>
+                                  <p>We are teaching the needy children since long. They are really adorable and innocent, unaware of the outside world. They often welcome us delightfully whenever we go to teach them. often we are offered hand made cards/gifts and also tasty meals cooked at their homes.apart from this they are so connected to us that they want to spend a maximum of their time in gaining knowledge from us. We hope that we may be remembered forever by children in case we depart.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="feature-box">
+                          <div class="clearfix">
+                              <div class="iconset">
+                                  <span class="glyphicon glyphicon-cog icon"></span>
+                              </div>
+                              <div class="feature-content">
+                                  <h4>Reliable services</h4>
+                                  <p>There are many places where we go to teach children. The places they live in are pitiful,We provide help to children by giving them resources to study,We make children participate in dancing performances, drawing, competitions, workshops etc</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="feature-box">
+                          <div class="clearfix">
+                              <div class="iconset">
+                                  <span class="glyphicon glyphicon-cog icon"></span>
+                              </div>
+                              <div class="feature-content">
+                                  <h4>Great support</h4>
+                                  <p> Many children are also incapable of meeting their nutritional needs. Thus to fill up their stomachs, we regularly pack some food from our hostel mess and distribute it among children. We feel really happy when we witness the children's empty stomachs getting filled. many blissful moments are captured and many relationships with children are built during this time.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <style>
+    body {
+    font-family: 'Roboto';font-size: 16px;
+}
 
-            </b></em></i></big></p>
-            <div class="line">
-                <span class="line-1"></span><br>
-                <span class="line-2"></span><br>
-                <span class="line-3"></span><br>
+.aboutus-section {
+    padding: 90px 0;
+}
+.aboutus-title {
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0 0 39px;
+    padding: 0 0 11px;
+    position: relative;
+    text-transform: uppercase;
+    color: #000;
+}
+.aboutus-title::after {
+    background: #fdb801 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 54px;
+}
+.aboutus-text {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0 0 35px;
+}
+
+a:hover, a:active {
+    color: #ffb901;
+    text-decoration: none;
+    outline: 0;
+}
+.aboutus-more {
+    border: 1px solid #fdb801;
+    border-radius: 25px;
+    color: #fdb801;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
+.feature .feature-box .iconset {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    position: relative;
+    width: 18%;
+}
+.feature .feature-box .iconset::after {
+    background: #fdb801 none repeat scroll 0 0;
+    content: "";
+    height: 150%;
+    left: 43%;
+    position: absolute;
+    top: 100%;
+    width: 1px;
+}
+
+.feature .feature-box .feature-content h4 {
+    color: #0f0f0f;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+
+
+.feature .feature-box .feature-content {
+    float: left;
+    padding-left: 28px;
+    width: 78%;
+}
+.feature .feature-box .feature-content h4 {
+    color: #0f0f0f;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+.feature .feature-box .feature-content p {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+}
+.icon {
+    color : #f4b841;
+    padding:0px;
+    font-size:40px;
+    border: 1px solid #fdb801;
+    border-radius: 100px;
+    color: #fdb801;
+    font-size: 28px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 70px;
+}
+  </style>
+    <div id="team" name="team">
+      <div class="container">
+      <div class="row centered">
+      <h2 class="centered">MEET OUR AWESOME TEAM</h2>
+      <hr>
+      <div class="col-lg-3 teamborder team-md"> 
+      <img class="img img-circle" src="" height="120px" width="120px" alt="">
+      <h4>Team Member 1</h4>
+      <p>Here is a short description to explain the profile of the member.</p>
+      <a href="#"><i class="fa fa-twitter"></i></a> 
+      <a href="#"><i class="fa fa-facebook"></i></a> 
+      <a href="#"><i class="fa fa-linkedin"></i></a> 
+      </div>
+      <div class="col-lg-3 teamborder team-md"> 
+      <img class="img img-circle" src="https://www.webnots.com/bootstrap/assets/bootstrap3.3.7/img/team02.jpg" height="120px" width="120px" alt="">
+      <h4>Team Member 2</h4>
+      <p>Here is a short description to explain the profile of the member.</p>
+      <a href="#"><i class="fa fa-twitter"></i></a> 
+      <a href="#"><i class="fa fa-facebook"></i></a> 
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div>
+      <div class="col-lg-3 teamborder team-md"> 
+      <img class="img img-circle" src="https://www.webnots.com/bootstrap/assets/bootstrap3.3.7/img/team03.jpg" height="120px" width="120px" alt="">
+      <h4>Team Member 3</h4>
+      <p>Here is a short description to explain the profile of the member.</p>
+      <a href="#"><i class="fa fa-twitter"></i></a> 
+      <a href="#"><i class="fa fa-facebook"></i></a> 
+      <a href="#"><i class="fa fa-linkedin"></i></a> 
+      </div>
+      <div class="col-lg-3 teamborder team-md"> 
+      <img class="img img-circle" src="https://www.webnots.com/bootstrap/assets/bootstrap3.3.7/img/team04.jpg" height="120px" width="120px" alt="">
+      <h4>Team Member 4</h4>
+      <p>Here is a short description to explain the profile of the member.</p>
+      <a href="#"><i class="fa fa-twitter"></i></a> 
+      <a href="#"><i class="fa fa-facebook"></i></a> 
+      <a href="#"><i class="fa fa-linkedin"></i></a> 
+      </div>
+      <div class="col-lg-3 teamborder team-md"> 
+        <img class="img img-circle" src="https://www.webnots.com/bootstrap/assets/bootstrap3.3.7/img/team04.jpg" height="120px" width="120px" alt="">
+        <h4>Team Member 4</h4>
+        <p>Here is a short description to explain the profile of the member.</p>
+        <a href="#"><i class="fa fa-twitter"></i></a> 
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+        <a href="#"><i class="fa fa-linkedin"></i></a> 
+        </div>
+        <div class="col-lg-3 teamborder team-md"> 
+          <img class="img img-circle" src="https://www.webnots.com/bootstrap/assets/bootstrap3.3.7/img/team04.jpg" height="120px" width="120px" alt="">
+          <h4>Team Member 4</h4>
+          <p>Here is a short description to explain the profile of the member.</p>
+          <a href="#"><i class="fa fa-twitter"></i></a> 
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+          <a href="#"><i class="fa fa-linkedin"></i></a> 
+          </div>
+          <div class="col-lg-3 teamborder team-md"> 
+            <img class="img img-circle" src="https://www.webnots.com/bootstrap/assets/bootstrap3.3.7/img/team04.jpg" height="120px" width="120px" alt="">
+            <h4>Team Member 4</h4>
+            <p>Here is a short description to explain the profile of the member.</p>
+            <a href="#"><i class="fa fa-twitter"></i></a> 
+            <a href="#"><i class="fa fa-facebook"></i></a> 
+            <a href="#"><i class="fa fa-linkedin"></i></a> 
             </div>
+            <div class="col-lg-3 teamborder team-md"> 
+              <img class="img img-circle" src="https://www.webnots.com/bootstrap/assets/bootstrap3.3.7/img/team04.jpg" height="120px" width="120px" alt="">
+              <h4>Team Member 4</h4>
+              <p>Here is a short description to explain the profile of the member.</p>
+              <a href="#"><i class="fa fa-twitter"></i></a> 
+              <a href="#"><i class="fa fa-facebook"></i></a> 
+              <a href="#"><i class="fa fa-linkedin"></i></a> 
+              </div>
+              <div class="col-lg-3 teamborder team-md"> 
+                <img class="img img-circle" src="https://www.webnots.com/bootstrap/assets/bootstrap3.3.7/img/team04.jpg" height="120px" width="120px" alt="">
+                <h4>Team Member 4</h4>
+                <p>Here is a short description to explain the profile of the member.</p>
+                <a href="#"><i class="fa fa-twitter"></i></a> 
+                <a href="#"><i class="fa fa-facebook"></i></a> 
+                <a href="#"><i class="fa fa-linkedin"></i></a> 
+                </div>
+      <div class="col-lg-3 teamborder team-md"> 
+        <img class="img img-circle" src="https://www.webnots.com/bootstrap/assets/bootstrap3.3.7/img/team04.jpg" height="120px" width="120px" alt="">
+        <h4>Team Member 4</h4>
+        <p>Here is a short description to explain the profile of the member.</p>
+        <a href="#"><i class="fa fa-twitter"></i></a> 
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+        <a href="#"><i class="fa fa-linkedin"></i></a> 
         </div>
-    </section>
-    <section id="case">
-        <img src="https://i.postimg.cc/vBRRczNZ/20200422-004011.jpg" >
-        <div class="header-text">
-        <h1><big><em>Extending a Helping Hand for others...</em></big></h1>
-    </div>
-    </section>
-    <section id="case1">
-      <img  id="pho" style="width:450px" src="https://i.postimg.cc/R0D2Jzgm/IMG-20200423-WA0007.jpg" >
-      <div class="header-text">
-        <h1><big><em>Cleanliness drive</em></big></h1>
-        <span class="square"></span>
-        <p><big><i><em><b>
-          The children we teach maintain a little cleanliness and hygiene. Cleanliness drive teaching children basic sweeping, washing hands and using bins etc. The children showed great enthusiasm in learning all these things and implementing them in their day to day life. Hope they implement all the good things in their life.
-        </b></em></i></big></p>
-        <br><br><div class="line">
-            <span class="line-1"></span><br>
-            <span class="line-2"></span><br>
-            <span class="line-3"></span><br>
-        </div>
-     </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section id="case2">
-      <img  id="pho" style="width:450px" src="https://i.postimg.cc/vTdq589J/IMG-20200423-WA0009.jpg" >
-      <div class="header-text">
-        <h1><big><em>Cycle Distribution</em></big></h1>
-        <span class="square"></span>
-        <p><big><i><em><b>
-          It is really important for one to be physically fit for working efficiently. Thus to realize this is the group had collected some discarded bicycles from the institute and distributed them to the children. this is not only helped a child in recreation but also helped to commute from place to place faster. Once again, Thank you, donors!!!
-        </b></em></i></big></p>
-        <br><br><div class="line">
-            <span class="line-1"></span><br>
-            <span class="line-2"></span><br>
-            <span class="line-3"></span><br>
+        <div class="col-lg-8 col-lg-offset-2 centered">
+        <p class="large">Enter any additional information to be provided here.</p>
         </div>
       </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section id="case3">
-     <img  id="pho" style="width:450px" src="https://i.postimg.cc/Jz7FThgm/IMG-20200423-WA0008.jpg" >
-     <div class="header-text">
-           <h1><big><em>School Admission</em></big></h1>
-           <span class="square"></span>
-           <p><big><i><em><b>
-            We witnessed many children not admitted to the school. It was due to low income of the family or lack of awareness of parents. Thus we made a decision to admit each and every child to school. So far many children have been admitted to the school. Many are remaining but we expect them to get admitted very soon.
-           </b></em></i></big></p>
-           <br><br><div class="line">
-          <span class="line-1"></span><br>
-          <span class="line-2"></span><br>
-          <span class="line-3"></span><br>
-       </div>
-     </div>
-   </section>
-   <br>
-    <br>
-    <br>
-    <br>
-    <br>
-   <section id="case4">
-     <img  id="pho" style="width:450px" src="https://i.postimg.cc/j2XXNHRf/IMG-20200423-WA0010.jpg" >
-     <div class="header-text">
-         <h1><big><em>Book Fair</em></big></h1>
-         <span class="square"></span>
-         <p><big><i><em><b>
-          The children, knowing little about the literature were brought to the book fair which helped them in broadening their thoughts and views. A child was gifted a few books to help her know more about life and how to succeed in life. Once again the donors helped a lot to make the child stride from darkness to light.
-         </b></em></i></big></p>
-         <br><br><div class="line">
-          <span class="line-1"></span><br>
-          <span class="line-2"></span><br>
-          <span class="line-3"></span><br>
-         </div>
-       </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-   <section id="case5">
-       <img  id="pho" style="width:450px" src="https://i.postimg.cc/ZYFj1S6q/IMG-20200423-WA0011-1.jpg" >
-       <div class="header-text">
-         <h1><big><em>Study Material Distribution</em></big></h1>
-         <span class="square"></span>
-         <p><big><i><em><b>
-         The low income of children is also a barrier to accessing good education. Even a cheaper book is unaffordable for them. Thus we distributed many second-hand reference books and textbooks to children which were collected from students from outside and from the institute.
-         The book donors did a splendid job by helping children strive towards enlightenment.
-          </b></em></i></big></p>
-          <br><br><div class="line">
-         <span class="line-1"></span><br>
-         <span class="line-2"></span><br>
-         <span class="line-3"></span><br>
-        </div>
-       </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section id="case6">
-       <img  id="pho" style="width:450px" src="https://i.postimg.cc/GhLzR5jx/IMG-20200423-WA0012.jpg" >
-       <div class="header-text">
-           <h1><big><em>Slipper Distribution</em></big></h1>
-             <span class="square"></span>
-               <p><big><i><em><b>
-                Walking barefoot is extremely hot weather is really a painful task. Thus it was decided to relieve innocent children from this pain and gift them a pair of slippers.
-
-               Funds were raised for the Slippers distribution derive and many pairs were brought from it. It is once again a kind gesture of all donors that now children don't walk barefoot.
-               </b></em></i></big></p>
-               <br><br><div class="line">
-              <span class="line-1"></span><br>
-              <span class="line-2"></span><br>
-              <span class="line-3"></span><br>
+      </div>
+      </div>
+      <style>
+       #team {
+background: /*url(https://www.webnots.com/bootstrap/assets/bootstrap3.3.7/img/team.jpg)*/url(https://i.postimg.cc/3Rqqsbh4/IMG-20200423-WA0046.jpg) center center fixed;
+padding: 60px 0;
+text-align: center;
+background-size: cover;
+}
+#team h2 {
+color: #fff;
+}
+#team p {
+color: #fff;
+line-height: 25px;
+}
+#team h4 {
+padding-top: 10px;
+color: #fff;
+font-weight:bold;
+}
+#team p.large {
+margin-top: 60px;
+margin-bottom: 30px;
+}
+#team .fa {
+width: 30px;
+height: 30px;
+margin: 0 3px;
+border-radius: 100%;
+font-size: 15px;
+line-height: 30px;
+outline: 0;
+color: #fff;
+background-color: #e91e63;
+-webkit-transition: all .3s;
+-moz-transition: all .3s;
+transition: all .3s;
+}
+#team .fa:hover {
+background-color: #673ab7;
+}
+.teamborder {
+border: 1px solid lightgray;
+padding: 20px;
+}
+hr {
+display: block;
+height: 3px;
+border: 0;
+margin: 3em 0;
+padding: 0;
+background-image: linear-gradient(left, #fff, #e6e6e6, #fff);
+background-image: -webkit-linear-gradient(left, #fff, #e6e6e6, #fff);
+background-image: -moz-linear-gradient(left, #fff, #e6e6e6, #fff);
+background-image: -o-linear-gradient(left, #fff, #e6e6e6, #fff);
+width: 50%;
+left: 25%;
+position: relative;
+border: none;
+}
+#team hr {
+display: block;
+height: 3px;
+border: 0;
+margin: 3em 0;
+padding: 0;
+background-image: linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+width: 50%;
+left: 25%;
+position: relative;
+border: none;
+}
+.row {
+margin: 10px;
+}
+.team-md {
+box-shadow: inset 0px 0px 22px 2px #e3d1d1;
+transition: .2s ease-out;
+}    
+      </style>
+      <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel" >
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-2" data-slide-to="1"></li>
+          <li data-target="#carousel-example-2" data-slide-to="2"></li>
+          <li data-target="#carousel-example-2" data-slide-to="3"></li>
+          <li data-target="#carousel-example-2" data-slide-to="4"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="view">
+              <img class="d-block w-100" src="https://i.postimg.cc/4yzQMLxq/20200421-141738-2.jpg" alt="First slide" style="width:100px;height:600px;">
+              <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Inspirational Educational Personalities</h3>
+              <p>They are Our Role Models</p>
+            </div>
           </div>
-         </div>
-      </section>
-      <br>
-    <br>
-    <br>
-    <br>
-    <br>
-      <section id="case7">
-        <img  id="pho" style="width:450px" src="https://i.postimg.cc/yx2zzNrK/IMG-20200423-WA0013-1.jpg" >
-        <div class="header-text">
-            <h1><big><em>Cloth Distribution</em></big></h1>
-              <span class="square"></span>
-                <p><big><i><em><b>
-                  Blocking, a basic necessity wasn't getting fulfilled for the children living in slums. We thus organised a cloth distribution drive where we collected the discarded clothes from the students and staff at the institute and distributed among the needy. We also organised a  winter cloth distribution drive where we had brought winter clothes from the funds raised for the same. The children of Nilam society are really very grateful to all donors.
-                </b></em></i></big></p>
-                <br><br><div class="line">
-               <span class="line-1"></span><br>
-               <span class="line-2"></span><br>
-               <span class="line-3"></span><br>
-           </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img class="d-block w-100" src="https://i.postimg.cc/C1mnRXXP/IMG-20200423-WA0045-1.jpg" alt="Second slide" style="width:100px;height:600px;">
+              <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Food Distribution</h3>
+              <p> Many children are also incapable of meeting their nutritional needs. Thus to fill up their stomachs, we regularly pack some food from our hostel mess and distribute it among children. We feel really happy when we witness the children's empty stomachs getting filled. many blissful moments are captured and many relationships with children are built during this time.</p>
+            </div>
           </div>
-       </section>
-       <br>
-    <br>
-    <br>
-    <br>
-    <br>
-       <section id="case8">
-        <img  id="pho" style="width:500px" src="https://i.postimg.cc/76D6pKJ9/20200505-173147.jpg" >
-        <div class="header-text">
-            <h1><big><em>Awarness Program</em></big></h1>
-              <span class="square"></span>
-              <p><big><i><em><b>
-                We had also conducted an awareness program for kids and parents informing them bout career opportunities in future. The presentation also included some cleanliness time management and result in analysis tips. Apart from this we also gave some guidelines on effective parenting. The parents were really grateful for such an uprising presentation.
-                </b></em></i></big></p>
-                <br><br><div class="line">
-               <span class="line-1"></span><br>
-               <span class="line-2"></span><br>
-               <span class="line-3"></span><br>
-           </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img class="d-block w-100" src="https://i.postimg.cc/Bbc2NjhG/20200421-141711.jpg" alt="Third slide" style="width:100px;height:600px;">
+              <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Making Children Par with Others</h3>
+              <p> Apart from the prescribed syllabus, we prepare children for several competitive examinations such as NTSE, UPSC, GPSC, Navodaya. We also strive for giving them a National level platform where they can showcase their academic strength We make children participate in dancing performances, drawing, competitions, workshops etc.organised by our institute. This also provides the platform and an opportunity to show their talents. Several reviews and appreciation from the audience and encourage them to keep going.</p>
+            </div>
           </div>
-       </section>
-    <section id="food">
-          <img src="https://i.postimg.cc/CMsyxbHw/20200422-004228.jpg">
-          <div class="header-text">
-              <h1>Food Distribution</h1>
-              <span class="square"></span>
-              <p><big><i>
-                Many children are also incapable of meeting their nutritional needs. Thus to fill up their stomachs, we regularly pack some food from our hostel mess and distribute it among children. We feel really happy when we witness the children's empty stomachs getting filled. many blissful moments are captured and many relationships with children are built during this time.
-              </p></big></i>
-              <div class="line">
-                  <span class="line-1"></span><br>
-                  <span class="line-2"></span><br>
-                  <span class="line-3"></span><br>
-              </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img class="d-block w-100" src="https://i.postimg.cc/4yzQMLxq/20200421-141738-2.jpg" alt="Third slide" style="width:100px;height:600px;">
+              <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Celebrating With Children</h3>
+              <p>We also celebrate our birthdays with children and offer them notebooks stationary food packets etc.Also we are gifted with hand made birthday cards from the children The children are much eager to spend blissful moments with us. We thus try celebrating many festivals with them. This is the best time when our bonding with the children strengthens. We really feel elated when we spend a festival time with them</p>
+            </div>
           </div>
-     </section>
-    <section id="map1">
-          <img id="pho" style="width:500px" src="https://i.postimg.cc/xdMLMvRd/IMG-20200423-WA0015.jpg">
-           <div class="right"></div>
-           <div class="header-text">
-              <h1><big><strong>Competitive exam preparation</strong></big></h1>
-              <span class="square"></span>
-              <p><big><i> Apart from the prescribed syllabus, we prepare children for several competitive examinations such as NTSE, UPSC, GPSC, Navodaya. We also strive for giving them a National level platform where they can showcase their academic strength.</p></big></i>
-            <div class="line">
-             <span class="line-1"></span><br>
-             <span class="line-2"></span><br>
-             <span class="line-3"></span><br>
-          </div>
-         </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section id="map2">
-          <img id="pho" style="width:460px" src="https://i.postimg.cc/ZYcFwLhB/IMG-20200423-WA0014.jpg">
-            <div class="right"></div>
-            <div class="header-text">
-             <h1><big><strong>Dancing,<br>Performance,<br>Drawing,<br>Competition,<br>Workshops</strong></big></h1>
-             <span class="square"></span>
-             <p><big><i> We make children participate in dancing performances, drawing, competitions, workshops etc.organised by our institute. This also provides the platform and an opportunity to show their talents. Several reviews and appreciation from the audience and encourage them to keep going. </p></big></i>
-            <div class="line">
-              <span class="line-1"></span><br>
-              <span class="line-2"></span><br>
-              <span class="line-3"></span><br>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img class="d-block w-100" src="https://i.postimg.cc/bwD53jRn/IMG-20200423-WA0043.jpg" alt="Third slide" style="width:100px;height:600px;">
+              <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive">Extending Help</h3>
+              <p>We Provide Our Best Possible help to our children</p>
+            </div>
           </div>
         </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section id="map3">
-        <img id="pho" style="width:500px" src="https://i.postimg.cc/xdMLMvRd/IMG-20200423-WA0015.jpg">
-          <div class="right"></div>
-          <div class="header-text">
-              <h1><big><strong>Bus Tracking Application</strong></big></h1>
-              <span class="square"></span>
-              <p><big><i> There are two to three buses running SVNIT campus to help students in commuting inside the campus. But lack of awareness about bus timings made the facility less efficient. We have thus come up with 'SVNIT BusWar' application which helps students in tracking bus location and navigating inside the campus.</p></big></i>
-              <div class="line">
-                  <span class="line-1"></span><br>
-                  <span class="line-2"></span><br>
-                  <span class="line-3"></span><br>
-              </div>
-          </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section id="map5">
-           <div class="header-text">
-                <h1><big><strong>Birthday Celebrations</strong></big></h1>
-                 <span class="square"></span>
-                 <p><big><i> We also celebrate our birthdays with children and offer them notebooks stationary food packets etc.Also we are gifted with hand made birthday cards from the children</p></big></i><br>
-              <div class="line">
-                  <span class="line-1"></span><br>
-                  <span class="line-2"></span><br>
-                  <span class="line-3"></span><br>
-              </div>
-            </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-      <!--<img id="pho" style="width:300px" src="https://i.postimg.cc/RVJhWMGS/IMG-20200423-WA0017.jpg">
-      <img id="pho" style="width:300px" src="https://i.postimg.cc/ncXjqKVt/IMG-20200423-WA0016.jpg">-->
-    <section id="map6">
-          <img style="width:300px" src="https://i.postimg.cc/W4f1nnmv/IMG-20200423-WA0022.jpg">
-          <img style="width:271px" src="https://i.postimg.cc/kgqGXDMk/IMG-20200423-WA0023.jpg">
-          <img style="width:272px" src="https://i.postimg.cc/Nf1LcRt6/IMG-20200423-WA0025.jpg">
-          <img style="width:259px" src="https://i.postimg.cc/V6p5YR5R/IMG-20200423-WA0026.jpg">
-             <div class="header-text">
-               <h1><big><strong>Festival Celebrations</strong></big></h1>
-               <span class="square"></span>
-               <p><big><i>  The children are much eager to spend blissful moments with us. We thus try celebrating many festivals with them. This is the best time when our bonding with the children strengthens. We really feel elated when we spend a festival time with them</p></big></i><br>
-              <div class="line">
-                  <span class="line-1"></span><br>
-                  <span class="line-2"></span><br>
-                  <span class="line-3"></span><br>
-              </div>
-          </div>
-    </section>
-    <section id="map7">
-          <img id="pho" style="width:300px" src="https://i.postimg.cc/Pf8RQsBq/20200423-200331.jpg">
-          <img id="pho" style="width:300px" src="https://i.postimg.cc/rsJWNpTb/20200423-200219.jpg">
-          <img id="pho" style="width: 330px" src="https://i.postimg.cc/hvqb0wdJ/20200423-200247.jpg">
-          <img id="pho" style="width:300px" src="https://i.postimg.cc/T18Q41Z3/20200423-200309.jpg">
-              <div class="header-text">
-                <h1>Inspirational Educational Personalities</h1>
-              </div>
-    </section>
-    <section id="map8">
-          <img id="pho" style="width:400px" src="https://i.postimg.cc/Pf8RQsBq/20200423-200331.jpg">
-               <div class="header-text">
-                 <h1>Rajesh Kumar Sharma</h1>
-                 <span class="square"></span>
-                 <p><big><i>
-                  A college dropout Rajesh Kumar Sharma teaches 200 children from slums under a railway flyover near a Yamuna bank station in Delhi. Started from two in 2007, he has now been teaching over 200 children from 9 am to 12 pm. Inspite of not following a prescribed syllabus his initiative has now grown into a school defying all odds.
-                  </p></big></i>        
-                <div class="line">
-                  <span class="line-1"></span><br>
-                  <span class="line-2"></span><br>
-                  <span class="line-3"></span><br>
-                </div>
-                </div>
-    </section>
-    <section id="map9">
-         <img id="pho" style="width:400px" src="https://i.postimg.cc/rsJWNpTb/20200423-200219.jpg">
-             <div class="header-text">
-                 <h1>Aditya Kumar</h1>
-                   <span class="square"></span>
-                    <p><big><i>
-                      Owning only a cycle. Aditya Kumar has spread education to the places where teachers, schools couldn't reach. He travels 60 to 65km daily to teach the poor in the way from Lucknow to Ranchi free of cost.His hard work has inspired us to keep spreading light and giving our best
-                    </p></big></i>
-                        <div class="line">
-                        <span class="line-1"></span><br>
-                        <span class="line-2"></span><br>
-                        <span class="line-3"></span><br>
-                </div>
-                </div>
-    </section>
-    <section id="map10">
-         <img id="pho" style="width:400px" src="https://i.postimg.cc/hvqb0wdJ/20200423-200247.jpg">
-             <div class="header-text">
-                 <h1>Anand Kumar</h1>
-                    <span class="square"></span>
-                    <p><big><i>
-                       Founder of the famous 'Super 30'. A nand Kumar has been giving free coaching to the engineering aspirants and has helped 391 out of 450 students to clear IIT's from 2003 to 2017. He conducts yearly competitive test and selects best 30 students from the underpriviledged and tutors them. Apart from tutorials, he also provides them with study material,food and lodging.He has been doing so without taking any financial support from government or organization
-                    </p></big></i>                
-                        <div class="line">
-                        <span class="line-1"></span><br>
-                        <span class="line-2"></span><br>
-                        <span class="line-3"></span><br>
-                </div>
-                </div>
-    </section>
-    <section id="map11">
-         <img id="pho" style="width:400px" src="https://i.postimg.cc/T18Q41Z3/20200423-200309.jpg">
-          <div class="header-text">
-              <h1>Abdul Malik</h1>
-                <span class="square"></span>
-                 <p><big><i>
-                  Living in Malapuram, Kerala this 42-year-old maths teacher has never missed a class. The distance between his home and school is a 24 km long journey. To avoid this he has been swimming through a river from home to school and back over 20years. This shows the pain our teachers put in teaching us.
-                  </p></big></i>        
-                          <div class="line">
-                          <span class="line-1"></span><br>
-                          <span class="line-2"></span><br>
-                          <span class="line-3"></span><br>
-            </div>
-           </div>
-    </section>
-    <section id="features">
+        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+      </div>
+      <!--Carousel Wrapper-->
+       <center><section id="features">
         <div class="row">
              <div class="col">
                <img  src="https://img.pngio.com/collection-of-free-transparent-logo-book-download-on-ui-ex-png-books-black-and-white-400_400.png"></img>
@@ -735,12 +598,120 @@ let slideIndex = 1;
                 </div>
             </div>
          </div>
-    </section>
-    <section class="footer">
-      <div class="align">
-       <p> @2020 Edignite Made by @Sankirtana</p>
-     </div>  
-    </section>
-     </div>
+    </section></center>
+    <footer class="page-footer font-small stylish-color-dark pt-4" style="background-color: lightgoldenrodyellow;;" id="contact1">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto">
+      
+              <!-- Content -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact Us!</h5>
+              <p>We provide help by supplying educational materials and videos,Do join as volunteers by filling up the info,please do follow us in social media platforms</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Youtube links</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://www.youtube.com/channel/UCoa_orr8SJHe4Z9Rl3ukDNQ!">youtube channel</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/playlist?list=PL4_vh0b5AD6fvlX6RKcoSqWk0HSMRhU4d!">Social India</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/playlist?list=PL4_vh0b5AD6fZvZbxO4qaNPGmmkn4DEf_!"> JEE Physics</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/playlist?list=PL4_vh0b5AD6fKg0QdSVJhp-xb-jZGgpG8">JEE Maths</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Whatsapp</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!">Link 4</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Social media</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://www.instagram.com/invites/contact/?i=1uc91cbq7mh66&utm_content=6wctbpu">Instagram</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/ed-ignite-6767071a3">Linkedin</a>
+                </li>
+                <li>
+                  <a href="https://en.wikipedia.org/wiki/Edignite">Wikipedia</a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/Edignite1?s=08">Twitter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Join As Volunteer</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="/compose" class="btn btn-danger btn-rounded">Join up!</a>
+          </li>
+        </ul>
+        <hr>
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="https://mdbootstrap.com/">@Edignite</a>
+        </div>
+      </footer>
+      <div class="alert text-center cookiealert" role="alert">
+        <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
+      
+        <button type="button" class="btn btn-primary btn-sm acceptcookies">
+            I agree
+        </button>
+      </div>
 </body>
 </html>
