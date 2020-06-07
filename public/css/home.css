@@ -8,17 +8,16 @@ body{
      background-color: rebeccapurple;
 }
 #header1{
-     padding-top: 400px;
-     padding-bottom: 400px;
-     background-image: url("https://i.postimg.cc/PJxt474C/edignite-nice-pic.jpg");
+     padding-top: 120px;
+     padding-bottom: 120px;
+     background-image: url("https://i.postimg.cc/bwD53jRn/IMG-20200423-WA0043.jpg");
      background-repeat: no-repeat;
      background-color: rebeccapurple;
      background-position: center;
      background-size: cover; 
 }
 #header{
-     padding-top: 80px;
-     padding-bottom: 50px;
+     padding-top:50px ;
      background-image: url("https://i.postimg.cc/FstYCmgX/Blur-Image-5-5-2020-5-54-53.jpg");
      background-repeat: no-repeat;
      background-color: rebeccapurple;
@@ -35,11 +34,9 @@ body{
 }
 .header-text{
      max-width: 340px;
-     margin-top: 170px;
-     margin-left: 100px;
-     margin-bottom: 100px;
+     margin-top: 50px;
+     margin-left: 170px;
      text-shadow: 3px 2px black;
-
 }
 h1{
      font-size:40px ;
@@ -49,14 +46,14 @@ h1{
      height:12px;
      width:12px;
      display:inline-block;
-     background: green;
+     background: #fdb801;
      margin: 15px 0;
 }
 .common-btn{
      padding:10px 20px 20px;
      background: transparent;
      outline: none;
-     border:2px solid red;
+     border:2px solid #fdb801;
      font-weight: bold;
      cursor: pointer;
      text-transform: uppercase;
@@ -73,20 +70,20 @@ p big i{
 .line-1{
      width: 15px;
      height:15px;
-     background:red;
+     background:#fdb801;
      display:inline-block;
  
 }
 .line-2{
      width:80px;
      height:1px;
-     background:red ;
+     background:#fdb801;
      display:inline-block;
 }
 .line-3{
      width:60px;
      height:1px;
-     background:red ;
+     background:#fdb801 ;
      display: inline-block;
 }
 .line{
@@ -98,7 +95,7 @@ p big i{
      position: fixed;
      right:-250px;
      top:0;
-     background-color:rebeccapurple;
+     background-color:rgba(0,0,0,0.2);
      z-index: 2;
      transition: 2s;
      overflow-y: scroll;
@@ -157,7 +154,7 @@ q blockquote big {
 #features{
      padding-top: 60px;
      padding-bottom:60px ;
-     background-color: yellow;
+     background-color: #fdb801;
      background-image: url("file:///C:/Users/SANKIRTANA/Downloads/20200409_145537%20(1).jpg");
 }
 .row{
@@ -535,7 +532,7 @@ p big i em b{
      text-align: center;
 }
 .topnav {
-     background-color:grey;
+     background-color:rebeccapurple;
      overflow: hidden;
   }
   
@@ -548,11 +545,11 @@ p big i em b{
      font-size: 17px;
 }
 .topnav a:hover {
-     background-color: grey;
-     color: darkred;
+     background-color: yellow;
+     color: rebeccapurple;
 }
 .topnav a.active {
-     background-color: darkred;
+     background-color: yellow;
      color:white;
 }
 mark h1{
@@ -566,38 +563,6 @@ mark h1{
  #logon{
      padding-top: 5px;
      background-color: rebeccapurple;
-}
-.content {
-     padding: 16px;
-}
-.sticky {
-     position: fixed;
-     top: 0;
-     width: 100%;
-}
-.sticky + .content {
-     padding-top: 60px;
-}
-#navbar {
-     overflow: hidden;
-     background-color:yellow;
-}
-#navbar a {
-     float: left;
-     display: block;
-     color: rebeccapurple;
-     text-align: center;
-     padding: 30px 30px;
-     text-decoration: none;
-     font-size: 17px;
-}
-#navbar a:hover {
-     background-color: #ddd;
-     color: grey;
-}
-#navbar a.active {
-     background-color: purple;
-     color: white;
 }
 #pic{
      border-radius: 70%;
@@ -756,7 +721,7 @@ h2 big{
    }
    .dropdown-container {
      display: none;
-     background-color: rebeccapurple;
+     background-color: rgba(0,0,0,0.2);
      padding-left: 8px;
    }
    .fa-caret-down {
