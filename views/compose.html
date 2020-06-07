@@ -13,6 +13,18 @@
    
 </head>
 <body>
+  <nav id="side">
+    <ul>
+      <li><a href="/place">Places We Go</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/helping">Helping Hand</a></li>
+      <li><a href="#contact1">Contact</a></li>
+      <li><a href="#aboutus123">about</a></li>
+      <li><a href="#team">team</a></li>
+      <li><a href="#carousel-example-2">Know Us</a></li>
+    </ul>
+  </nav>
+  <img src="https://marketing.dcassetcdn.com/blog/2016/March/icons-vs-logos/Hamburger-Icon_300.png" id="menu">
     <script>
         var menu=document.getElementById("menu");
         var side=document.getElementById("side");
@@ -73,6 +85,7 @@
             slides[slideIndex-1].style.display = "block";
             dots[slideIndex-1].className += " active";
         }
+
     </script>
     <nav class="navbar navbar-expand-lg static-top"style="background-color:lightgoldenrodyellow;">
         <div class="container">
@@ -118,22 +131,56 @@
     navbar.classList.remove("sticky");
   }
 }
-    </script>
+function formValid()                                    
+{ 
+	var name = document.getElementById('name').value;               
+	var email = document.getElementById('email').value;    
+	var phone = document.getElementById('phone').value;   
+	var phoneno=/^[6-9][0-9]{9}$/;
+	var nameregx=/^[A-Za-z]{3,30}$/;
+	var emailregx=/^[A-Za-z0-9_]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/;
+	if(nameregx.test(name)){
+		document.getElementById('username').innerHTML=" ";
+	}
+	else{
+		document.getElementById('username').innerHTML="**enter correct name**";
+		return false; 
+	}
+	
+	if(emailregx.test(email)){
+		document.getElementById('emailcheck').innerHTML=" ";
+	}
+	else{
+		document.getElementById('emailcheck').innerHTML="**enter correct email**";
+		return false; 
+	}
+	if(phoneno.test(phone)){
+		document.getElementById('phonecheck').innerHTML=" ";
+	}
+	else{
+		document.getElementById('phonecheck').innerHTML="**enter correct phone number**";
+		return false; 
+	}
+}
+</script>
    <section class="join">
     <div class="container">
       <h2><big>Join as a volunteer</big></h2>
-      <form action="/compose" method="POST" autocomplete="off">
+      <form action="/compose" method="POST" autocomplete="off" onsubmit="return formValid()">
         <div class="form-group">
           <label for="name"><p><big>Name:</p></big></label>
           <input type="text" class="form-control" id="text" placeholder="Enter name" name="name">
+          <center><span id="username" style="color: red;"></span></center>
         </div>
         <div class="form-group">
           <label for="email"><p><big>Email:</p></big></label>
           <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          <center><span id="emailcheck" style="color: red;"></span></center>
         </div>
         <div class="form-group">
           <label for="phone"><p><big>Phone number:</p></big></label>
           <input type="text" class="form-control" id="phone" placeholder="Enter phonenumber" name="phone">
+          <center><span id="phonecheck" style="color: red;"></span></center>
         </div>
         <div class="form-group">
           <label for="occ"><p><big>Occupation:</p></big></label>
@@ -191,114 +238,119 @@
         
     </section></center>
   
-    <footer class="page-footer font-small stylish-color-dark pt-4" style="background-color: lightgoldenrodyellow;">
+    <footer class="page-footer font-small stylish-color-dark pt-4" style="background-color: lightgoldenrodyellow;;" id="contact1">
 
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left">
-      
-          <!-- Grid row -->
-          <div class="row">
-      
-            <!-- Grid column -->
-            <div class="col-md-4 mx-auto">
-      
-              <!-- Content -->
-              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
-              <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur
-                adipisicing elit.</p>
-      
-            </div>
-            <!-- Grid column -->
-      
-            <hr class="clearfix w-100 d-md-none">
-      
-            <!-- Grid column -->
-            <div class="col-md-2 mx-auto">
-      
-              <!-- Links -->
-              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-      
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!">Link 4</a>
-                </li>
-              </ul>
-      
-            </div>
-            <!-- Grid column -->
-      
-            <hr class="clearfix w-100 d-md-none">
-      
-            <!-- Grid column -->
-            <div class="col-md-2 mx-auto">
-      
-              <!-- Links -->
-              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-      
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!">Link 4</a>
-                </li>
-              </ul>
-      
-            </div>
-            <!-- Grid column -->
-      
-            <hr class="clearfix w-100 d-md-none">
-      
-            <!-- Grid column -->
-            <div class="col-md-2 mx-auto">
-              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-      
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!">Link 4</a>
-                </li>
-              </ul>
-            </div>
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+    
+        <!-- Grid row -->
+        <div class="row">
+    
+          <!-- Grid column -->
+          <div class="col-md-4 mx-auto">
+    
+            <!-- Content -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact Us!</h5>
+            <p>We provide help by supplying educational materials and videos,Do join as volunteers by filling up the info,please do follow us in social media platforms</p>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Youtube links</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.youtube.com/channel/UCoa_orr8SJHe4Z9Rl3ukDNQ!">youtube channel</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/playlist?list=PL4_vh0b5AD6fvlX6RKcoSqWk0HSMRhU4d!">Social India</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/playlist?list=PL4_vh0b5AD6fZvZbxO4qaNPGmmkn4DEf_!"> JEE Physics</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/playlist?list=PL4_vh0b5AD6fKg0QdSVJhp-xb-jZGgpG8">JEE Maths</a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Whatsapp</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://chat.whatsapp.com/FiYIwoj7lqs1vRzEVdPn19">Life Coach</a>
+              </li>
+              <li>
+                <a href="https://chat.whatsapp.com/GSQFpH0iwdc8HYErzxd9JE">Edignite Medical</a>
+              </li>
+              <li>
+                <a href="https://chat.whatsapp.com/JnvPVS5LZCd0tOulueNDmf">Edignite MSC/B.Tech</a>
+              </li>
+              <li>
+                <a href="https://chat.whatsapp.com/Evy4diZYWufJMhjFuTTOGx">Edignite social</a>
+              </li>
+              <li>
+                <a href="https://chat.whatsapp.com/JiBWDWYu1zz2lCmDyOGJm5">Edignite School</a>
+              </li>
+              <li>
+                <a href="https://chat.whatsapp.com/FoXHJyRIHEs8B5iK3qnOzT">Edignite awareness</a>
+              </li>
+            </ul>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <hr class="clearfix w-100 d-md-none">
+    
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Social media</h5>
+    
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.instagram.com/invites/contact/?i=1uc91cbq7mh66&utm_content=6wctbpu">Instagram</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/ed-ignite-6767071a3">Linkedin</a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Edignite">Wikipedia</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Edignite1?s=08">Twitter</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <hr>
-        <ul class="list-unstyled list-inline text-center py-2">
-          <li class="list-inline-item">
-            <h5 class="mb-1">Register for free</h5>
-          </li>
-          <li class="list-inline-item">
-            <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
-          </li>
-        </ul>
-        <hr>
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-          <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-        </div>
-      </footer>
+      </div>
+      <hr>
+      <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+          <h5 class="mb-1">Join As Volunteer</h5>
+        </li>
+        <li class="list-inline-item">
+          <a href="/compose" class="btn btn-danger btn-rounded">Join up!</a>
+        </li>
+      </ul>
+      <hr>
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/">@Edignite</a>
+      </div>
+    </footer>
+    
 </body>
 </html>
