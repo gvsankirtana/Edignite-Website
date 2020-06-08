@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg static-top"style="background-color:lightgoldenrodyellow;" id="navbar_top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+            <img src="https://i.postimg.cc/mTq4Gphs/edignitelogo-png.jpg" style="width:100px;" alt="">
+          </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html"><p  style="color: black;">Home</p>
+                  <span class="sr-only">(current)</span>
+                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus123"><p style="color: black;">About</p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team"><p style="color: black;">Team</p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact1"><p style="color: black;">Contact</p></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#carousel-example-2"><p style="color: black;">Know Us</p></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script>
+    if ($(window).width() > 992) {
+  $(window).scroll(function(){  
+     if ($(this).scrollTop() > 40) {
+        $('#navbar_top').addClass("fixed-top");
+        // add padding top to show content behind navbar
+        $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+      }else{
+        $('#navbar_top').removeClass("fixed-top");
+         // remove padding top from body
+        $('body').css('padding-top', '0');
+      }   
+  });
+} 
+  </script>
+   <div class="content">
+     <section id="header1">
+        <div class="header-text">
+            <h1 style="font-size: 60px;color:#fdb801">EDIGNITE</h1>
+            <p style="font-size: larger;color:lightgoldenrodyellow;"><big><i style="font-size: larger;color:lightgoldenrodyellow;">
+              SOCIAL INDIA
+            </p></big></i>  
+  </div>
+        <center><h5 class="mb-1" style="font-size: 40px;color: white; text-shadow: black;">Join As Volunteer</h5></center>
+      <center><a href="compose.html" class="btn btn-danger btn-rounded">Join up!</a> </center>
+ </div>
+</div>
+     </section>
+<section id="header">
+        <div class="header-text">
+            <h1 style="color:#fdb801">Message from founder</h1>
+            <span class="square"></span>
+            <p style="color:lightgoldenrodyellow; font-size: larger;"><i style="color:lightgoldenrodyellow;">
+              Social India group always works for the needy of the nation. The group aims at providing all help to the necessitous people of the nation. Apart from education, the group tries to provide spread smiles amongst children by celebrating many festivals, playing, making them participate in several events and thus spending a good amount of time with them. Thus, the group also aims at building a strong relationship with the children which can, in the future lead to their betterment.
+
+              The group volunteers are on toes to help the underprivileged children and believe service to them as their duty towards the nation and thus the globe. This virtue of selflessness is the thing I like the most about the group. Working with volunteers for the betterment of the children and interacting with several needy ones adds to experiences and memories that can never be erased from my life, I hope all the readers to do some work that benefits the society, nation and the world, may it be small help or toughest job of eradicating poverty. My best wishes are always there with everyone.
+            </p></i>
+            <div class="line">
+                <span class="line-1"></span><br>
+                <span class="line-2"></span><br>
+                <span class="line-3"></span><br>
+            </div>
+        </div>
+    </div>
+</section>
+<nav id="side">
+  <ul>
+    <li><a href="place.html">Places We Go</a></li>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="helping.html">Helping Hand</a></li>
+    <li><a href="#contact1">Contact</a></li>
+    <li><a href="#aboutus123">about</a></li>
+    <li><a href="#team">team</a></li>
+    <li><a href="#carousel-example-2">Know Us</a></li>
+  </ul>
+</nav>
+<img src="https://marketing.dcassetcdn.com/blog/2016/March/icons-vs-logos/Hamburger-Icon_300.png" id="menu">
+<script>
+    var menu=document.getElementById("menu");
+    var side=document.getElementById("side");
+    side.style.right="-250px";
+    menu.onclick=function(){
+        if(side.style.right=="-250px"){
+            side.style.right="0px"
+        }
+        else{
+            side.style.right="-250px"
+        }
+    }
+  var scroll = new SmoothScroll('a[href*="#"]');
+  window.onscroll = function() {myFunction()};
+   var navbar = document.getElementById("navbar");
+   var sticky = navbar.offsetTop;
+  function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+let slideIndex = 1;
+    showSlides(slideIndex);
+    function changeSlide(n) {
+        showSlides(slideIndex += n);
+    }
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    setInterval("showSlides(++slideIndex)", 3000);
+    function showSlides(n) {
+        let i, slides, dots;
+        slides = document.getElementsByClassName("carousel-item");
+        dots = document.getElementsByClassName("indicator");
+        if (n > slides.length) {slideIndex = 1;}
+        if (n < 1) {slideIndex = slides.length;}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+    <div class="social">
+      <a href="https://www.instagram.com/invites/contact/?i=1uc91cbq7mh66&utm_content=6wctbpu"><img src="http://pluspng.com/img-png/instagram-png-instagram-icon-png-50-px-512.png"></img></a>
+      <a href="https://m.facebook.com/socialindiagroup.in/?ref=bookmarks"><img src="https://www.expectmorearizona.org/wp-content/uploads/2016/11/facebook-png-icon-follow-us-facebook-1.png"></img></a>
+      <a href="https://www.linkedin.com/in/ed-ignite-6767071a3"><img src="https://sguru.org/wp-content/uploads/2018/02/linkedin-png-linkedin-icon-1600.png"></img></a>
+      <a href="https://youtu.be/HGlA2UV-lQI"><img src="http://logok.org/wp-content/uploads/2014/08/Youtube-logo-2017.png"></img></a>
+      <a href="https://twitter.com/Edignite1?s=08"><img src="https://acxcom.files.wordpress.com/2015/04/twitter_logo_blue.png"></img></a>
+      <a href="https://pin.it/klcFa7D"><img src="http://pngimg.com/uploads/pinterest/pinterest_PNG63.png"></img></a>
+      <a href="https://en.wikipedia.org/wiki/Edignite"><img src="https://hotforsecurity.bitdefender.com/wp-content/uploads/2015/08/Wikipedia-en-logo-ball-upright-hole.png"></img></a>
+    </div>
+    <div class="aboutus-section" style="background-color: lightgoldenrodyellow;"id="aboutus123">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="aboutus">
+                      <h2 class="aboutus-title">About Us</h2>
+                      <p class="aboutus-text">The founder of the group. Prince Verma had been enlightening the necessitous children for two years before the establishment of the group. It was on 16 June 2019 that the official group with the name 'Social India' was started.Since then it has been progressing swiftly and is now enlightening/enlightened over 60 children. It came up with its tagline 'HOPE FOR OTHER' in December 2019. </p>
+                      <p class="aboutus-text"> It was January 2020 when it changed to Edignite Educational and charitable trust and had applied for registering itself as an NGO. Apart from the needy, the group has also thought about the welfare of students of the institute and has come up with many applications, Youtube videos. Notes..for the same. The group now has 20 to 25 volunteers and is still expanding.</p>
+                      <a class="aboutus-more" href="#">read more</a>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                  <div class="aboutus-banner">
+                      <img src="" alt="">
+                  </div>
+              </div>
+              <div class="col-md-5 col-sm-6 col-xs-12">
+                  <div class="feature">
+                      <div class="feature-box">
+                          <div class="clearfix">
+                              <div class="iconset">
+                                  <span class="glyphicon glyphicon-cog icon"></span>
+                              </div>
+                              <div class="feature-content">
+                                  <h4>About Children</h4>
+                                  <p>We are teaching the needy children since long. They are really adorable and innocent, unaware of the outside world. They often welcome us delightfully whenever we go to teach them. often we are offered hand made cards/gifts and also tasty meals cooked at their homes.apart from this they are so connected to us that they want to spend a maximum of their time in gaining knowledge from us. We hope that we may be remembered forever by children in case we depart.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="feature-box">
+                          <div class="clearfix">
+                              <div class="iconset">
+                                  <span class="glyphicon glyphicon-cog icon"></span>
+                              </div>
+                              <div class="feature-content">
+                                  <h4>Reliable services</h4>
+                                  <p>There are many places where we go to teach children. The places they live in are pitiful,We provide help to children by giving them resources to study,We make children participate in dancing performances, drawing, competitions, workshops etc</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="feature-box">
+                          <div class="clearfix">
+                              <div class="iconset">
+                                  <span class="glyphicon glyphicon-cog icon"></span>
+                              </div>
+                              <div class="feature-content">
+                                  <h4>Great support</h4>
+                                  <p> Many children are also incapable of meeting their nutritional needs. Thus to fill up their stomachs, we regularly pack some food from our hostel mess and distribute it among children. We feel really happy when we witness the children's empty stomachs getting filled. many blissful moments are captured and many relationships with children are built during this time.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <style>
+    body {
+    font-family: 'Roboto';font-size: 16px;
+}
+
+.aboutus-section {
+    padding: 90px 0;
+}
+.aboutus-title {
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0 0 39px;
+    padding: 0 0 11px;
+    position: relative;
+    text-transform: uppercase;
+    color: #000;
+}
+.aboutus-title::after {
+    background: #fdb801 none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 54px;
+}
+.aboutus-text {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0 0 35px;
+}
+
+a:hover, a:active {
+    color: #ffb901;
+    text-decoration: none;
+    outline: 0;
+}
+.aboutus-more {
+    border: 1px solid #fdb801;
+    border-radius: 25px;
+    color: #fdb801;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
+.feature .feature-box .iconset {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    position: relative;
+    width: 18%;
+}
+.feature .feature-box .iconset::after {
+    background: #fdb801 none repeat scroll 0 0;
+    content: "";
+    height: 150%;
+    left: 43%;
+    position: absolute;
+    top: 100%;
+    width: 1px;
+}
+
+.feature .feature-box .feature-content h4 {
+    color: #0f0f0f;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+
+
+.feature .feature-box .feature-content {
+    float: left;
+    padding-left: 28px;
+    width: 78%;
+}
+.feature .feature-box .feature-content h4 {
+    color: #0f0f0f;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+.feature .feature-box .feature-content p {
+    color: #606060;
+    font-size: 13px;
+    line-height: 22px;
+}
+.icon {
+    color : #f4b841;
+    padding:0px;
+    font-size:40px;
+    border: 1px solid #fdb801;
+    border-radius: 100px;
+    color: #fdb801;
+    font-size: 28px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 70px;
+}
+  </style>
+    <div id="team" name="team">
+      <div class="container">
+      <div class="row centered">
+      <h2 class="centered">MEET OUR AWESOME TEAM</h2>
+      <hr>
+      <div class="col-lg-3 teamborder team-md"> 
+      <img class="img img-circle" src="https://i.postimg.cc/prjR0dhR/IMG-20200606-WA0018.jpg" height="120px" width="120px" alt="">
+      <h4>Prince Verma</h4>
+      <p style="color:#fdb801">Founder Of Edignite,Mechanical engineering</p>
+      <a href="https://www.instagram.com/princeverma9805/"><i class="fa fa-instagram"></i></a> 
+      <a href="https://www.facebook.com/prince.verma.1004837"><i class="fa fa-facebook"></i></a> 
+      <a href="https://www.linkedin.com/in/prince-verma-9a9226147/"><i class="fa fa-linkedin"></i></a> 
+      </div>
+      <div class="col-lg-3 teamborder team-md"> 
+      <img class="img img-circle" src="https://i.postimg.cc/JzL42j5g/IMG-20200605-WA0017.jpg" height="120px" width="120px" alt="">
+      <h4>Janvi Popat</h4>
+      <p style="color:#fdb801">Member Volunteer of Edignite,Electrical Engineering 1st year</p>
+      <a href="https://www.instagram.com/jan.v_22.8/"><i class="fa fa-instagram"></i></a> 
+      <a href="https://www.facebook.com/janvi.popat.10"><i class="fa fa-facebook"></i></a> 
+      <a href="https://www.linkedin.com/in/janvi-popat-8288051a5/"><i class="fa fa-linkedin"></i></a>
+      </div>
+      <div class="col-lg-3 teamborder team-md"> 
+      <img class="img img-circle" src="https://i.postimg.cc/QdTx607c/IMG-20200605-WA0019.jpg" height="120px" width="120px" alt="">
+      <h4>Lekha Periwal</h4>
+      <p style="color:#fdb801">Human resource department head,Computer Science Engineering </p>
+      <a href="tel:6290889619"><i class="fa fa-phone"></i></a> 
+      <a href="https://www.facebook.com/lekha.periwal"><i class="fa fa-facebook"></i></a> 
+      <a href="https://www.linkedin.com/in/lekha-periwal-b47899189/"><i class="fa fa-linkedin"></i></a> 
+      </div>
+      <div class="col-lg-3 teamborder team-md"> 
+      <img class="img img-circle" src="https://i.postimg.cc/Dy7r346W/IMG-20200605-WA0028.jpg" height="120px" width="120px" alt="">
+      <h4>Anushree</h4>
+      <p style="color:#fdb801">Member Volunteer of Edignite,Electrical Engineering 1st year</p>
+      <a href="tel:9947570592"><i class="fa fa-phone"></i></a> 
+      <a href="https://www.facebook.com/socialindiagroup.in/"><i class="fa fa-facebook"></i></a> 
+      <a href="https://www.linkedin.com/in/edignite-ngo-60732a1a6/"><i class="fa fa-linkedin"></i></a> 
+      </div>
+      <div class="col-lg-3 teamborder team-md"> 
+        <img class="img img-circle" src="https://i.postimg.cc/CxLsknfy/IMG-20200605-WA0013.jpg" height="120px" width="120px" alt="">
+        <h4>Parag Parikh</h4>
+        <p style="color:#fdb801">Member Volunteer of Edignite,B.E. Civil 2017,Project Manager</p>
+        <a href="tel:8488925501"><i class="fa fa-phone"></i></a> 
+        <a href="https://www.instagram.com/parag_6795/"><i class="fa fa-instagram"></i></a> 
+        <a href="https://www.linkedin.com/in/parag-parikh-754247117/"><i class="fa fa-linkedin"></i></a> 
+        </div>
+        <div class="col-lg-3 teamborder team-md"> 
+          <img class="img img-circle" src="https://i.postimg.cc/CxzfwGqK/IMG-20200605-WA0034.jpg" height="120px" width="120px" alt="">
+          <h4>Tejal Shingadia</h4>
+          <p style="color:#fdb801">marketing head of group,Electrical division 1st year</p>
+          <a href="https://www.instagram.com/_tejal_1201/"><i class="fa fa-instagram"></i></a> 
+          <a href="https://www.facebook.com/tejal.shing.5"><i class="fa fa-facebook"></i></a> 
+          <a href="https://www.linkedin.com/in/tejal-shingadia-9872931a7/"><i class="fa fa-linkedin"></i></a> 
+          </div>
+          <div class="col-lg-3 teamborder team-md"> 
+            <img class="img img-circle" src="https://i.postimg.cc/L8chRrSy/IMG-20200605-WA0046.jpg" height="120px" width="120px" alt="">
+            <h4>Aditya Tomar</h4>
+            <p style="color:#fdb801">Technical head in Edignite,Masters in Chemical Engineering</p>
+            <a href="tel:9773771289"><i class="fa fa-phone"></i></a> 
+            <a href="https://www.instagram.com/thakhuraditomar/"><i class="fa fa-instagram"></i></a> 
+            <a href="https://www.linkedin.com/in/aditya-tomar-49191419a"><i class="fa fa-linkedin"></i></a> 
+            </div>
+            <div class="col-lg-3 teamborder team-md"> 
+              <img class="img img-circle" src="https://i.postimg.cc/13hZzPgN/IMG-20200605-WA0012.jpg" height="120px" width="120px" alt="">
+              <h4>Brijesh Saini</h4>
+              <p style="color:#fdb801">handles all social media site of Edignite,1st year Chemical</p>
+              <a href="https://www.linkedin.com/in/brijesh-saini-7352961a6"><i class="fa fa-instagram"></i></a> 
+              <a href="https://www.facebook.com/brijesh.saini.984786"><i class="fa fa-facebook"></i></a> 
+              <a href="https://www.linkedin.com/in/brijesh-saini-7352961a6/"><i class="fa fa-linkedin"></i></a> 
+              </div>
+              <div class="col-lg-3 teamborder team-md"> 
+                <img class="img img-circle" src="https://i.postimg.cc/65GLRhqM/Whats-App-Image-2020-06-06-at-18-06-46.jpg" height="120px" width="120px" alt="">
+                <h4>Fatima</h4>
+                <p style="color:#fdb801">Member Volunteer of Edignite,MSC physics 1st Year</p>
+                <a href="https://www.instagram.com/ed_ignite_/"><i class="fa fa-instagram"></i></a> 
+                <a href="tel:9154868888"><i class="fa fa-phone"></i></a> 
+                <a href="https://www.linkedin.com/in/edignite-ngo-60732a1a6/"><i class="fa fa-linkedin"></i></a> 
+                </div>
+                <div class="col-lg-3 teamborder team-md"> 
+                  <img class="img img-circle" src="https://i.postimg.cc/tgSGPbmQ/Whats-App-Image-2020-06-06-at-17-07-50.jpg" height="120px" width="120px" alt="">
+                  <h4>Ritesh Kumar</h4>
+                  <p style="color:#fdb801">Member Volunteer of Edignite,1st MSC year Chemical</p>
+                  <a href="http://instagram.com/ri23chaauhaan"><i class="fa fa-instagram"></i></a> 
+                  <a href="tel:9304310500"><i class="fa fa-phone"></i></a> 
+                  <a href="https://www.linkedin.com/in/ritesh-kumar-1a27801ab"><i class="fa fa-linkedin"></i></a> 
+                  </div>
+                  <div class="col-lg-3 teamborder team-md"> 
+                    <img class="img img-circle" src="https://i.postimg.cc/tC33g4YT/Whats-App-Image-2020-06-06-at-18-09-13.jpg" height="120px" width="120px" alt="">
+                    <h4>Heer Mehta</h4>
+                    <p style="color:#fdb801">Member Volunteer of  Edignite,1st year Chemical Engineering</p>
+                    <a href="https://www.instagram.com/ed_ignite_/"><i class="fa fa-instagram"></i></a> 
+                    <a href="7984844099"><i class="fa fa-phone"></i></a> 
+                    <a href="https://www.linkedin.com/in/heer-mehta-824a0b193/"><i class="fa fa-linkedin"></i></a> 
+                    </div>
+                    <div class="col-lg-3 teamborder team-md"> 
+                      <img class="img img-circle" src="https://i.postimg.cc/D0Wsr1QQ/Whats-App-Image-2020-06-07-at-14-32-59.jpg" height="120px" width="120px" alt="">
+                      <h4>Nitish Chandaka</h4>
+                      <p style="color:#fdb801">Member of HR Dept and teaching,1st year Chemical engineering</p>
+                      <a href="https://www.instagram.com/nitish_chandaka/"><i class="fa fa-instagram"></i></a> 
+                      <a href="tel:8463965288"><i class="fa fa-phone"></i></a> 
+                      <a href="https://www.linkedin.com/in/nitish-chandaka-145b391a4/"><i class="fa fa-linkedin"></i></a> 
+                      </div>
+                      <div class="col-lg-3 teamborder team-md"> 
+                        <img class="img img-circle" src="https://i.postimg.cc/qqjKHjJd/Whats-App-Image-2020-06-07-at-14-55-30.jpg" height="120px" width="120px" alt="">
+                        <h4>Akhilesh Yadav</h4>
+                        <p style="color:#fdb801">Member Volunteer of Edignite,1st year MSC Chemistry</p>
+                        <a href="https://www.instagram.com/akhileshyadav8194/"><i class="fa fa-instagram"></i></a> 
+                        <a href="tel:7081406841"><i class="fa fa-phone"></i></a> 
+                        <a href="https://www.linkedin.com/in/edignite-ngo-60732a1a6/"><i class="fa fa-linkedin"></i></a> 
+                        </div>
+                        <div class="col-lg-3 teamborder team-md"> 
+                          <img class="img img-circle" src="https://i.postimg.cc/Fz3SC3zj/IMG-20200327-200544.jpg" height="120px" width="120px" alt="">
+                          <h4>Ketan Bhargava</h4>
+                          <p style="color:#fdb801">Volunteer in marketing team,1st year Chemical engineering</p>
+                          <a href="https://www.instagram.com/ketan_bhargava01/"><i class="fa fa-instagram"></i></a> 
+                          <a href="tel:6268595536"><i class="fa fa-phone"></i></a> 
+                          <a href="https://www.linkedin.com/in/edignite-ngo-60732a1a6/"><i class="fa fa-linkedin"></i></a> 
+                          </div>
+                          <div class="col-lg-3 teamborder team-md"> 
+                            <img class="img img-circle" src="https://i.postimg.cc/wjH87zd2/Whats-App-Image-2020-06-07-at-16-08-07.jpg" height="120px" width="120px" alt="">
+                            <h4>Sarita Yadav</h4>
+                            <p style="color:#fdb801">Member Volunteer of Edignite and graduated in computer science</p>
+                            <a href="https://www.instagram.com/ed_ignite_/"><i class="fa fa-instagram"></i></a> 
+                            <a href="tel:7015209751"><i class="fa fa-phone"></i></a> 
+                            <a href="https://www.linkedin.com/in/edignite-ngo-60732a1a6/"><i class="fa fa-linkedin"></i></a> 
+                            </div>
+                            <div class="col-lg-3 teamborder team-md"> 
+                              <img class="img img-circle" src="https://i.postimg.cc/FKBBg5w2/Whats-App-Image-2020-06-07-at-15-57-29.jpg" height="120px" width="120px" alt="">
+                              <h4>Jyoti yadav</h4>
+                              <p style="color:#fdb801">Member Volunteer of Edignite,physiotherapy student ( BPT-4th yr)</p>
+                              <a href="https://www.instagram.com/ed_ignite_/"><i class="fa fa-instagram"></i></a> 
+                              <a href="tel:8295174459"><i class="fa fa-phone"></i></a> 
+                              <a href="https://www.linkedin.com/in/edignite-ngo-60732a1a6/"><i class="fa fa-linkedin"></i></a> 
+                              </div>
+        <div class="col-lg-8 col-lg-offset-2 centered">
+        <p class="large" style="color:#fdb801">EDIGNITE Group</p>
+        </div>
+      </div>
+      </div>
+      </div>
+      <style>
+       #team {
+background: /*url(https://www.webnots.com/bootstrap/assets/bootstrap3.3.7/img/team.jpg)*/url(https://i.postimg.cc/3Rqqsbh4/IMG-20200423-WA0046.jpg) center center fixed;
+padding: 60px 0;
+text-align: center;
+background-size: cover;
+}
+#team h2 {
+color: #fff;
+}
+#team p {
+color: #fff;
+line-height: 25px;
+}
+#team h4 {
+padding-top: 10px;
+color: #fff;
+font-weight:bold;
+}
+#team p.large {
+margin-top: 60px;
+margin-bottom: 30px;
+}
+#team .fa {
+width: 30px;
+height: 30px;
+margin: 0 3px;
+border-radius: 100%;
+font-size: 15px;
+line-height: 30px;
+outline: 0;
+color: #fff;
+background-color:#fdb801 ;
+-webkit-transition: all .3s;
+-moz-transition: all .3s;
+transition: all .3s;
+}
+#team .fa:hover {
+background-color: #673ab7;
+}
+.teamborder {
+border: 1px solid lightgray;
+padding: 20px;
+}
+hr {
+display: block;
+height: 3px;
+border: 0;
+margin: 3em 0;
+padding: 0;
+background-image: linear-gradient(left, #fff, #e6e6e6, #fff);
+background-image: -webkit-linear-gradient(left, #fff, #e6e6e6, #fff);
+background-image: -moz-linear-gradient(left, #fff, #e6e6e6, #fff);
+background-image: -o-linear-gradient(left, #fff, #e6e6e6, #fff);
+width: 50%;
+left: 25%;
+position: relative;
+border: none;
+}
+#team hr {
+display: block;
+height: 3px;
+border: 0;
+margin: 3em 0;
+padding: 0;
+background-image: linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0), #71c9d6, rgba(255, 255, 255, 0));
+width: 50%;
+left: 25%;
+position: relative;
+border: none;
+}
+.row {
+margin: 10px;
+}
+.team-md {
+box-shadow: inset 0px 0px 22px 2px #e3d1d1;
+transition: .2s ease-out;
+}    
+      </style>
+      <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel" >
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-2" data-slide-to="1"></li>
+          <li data-target="#carousel-example-2" data-slide-to="2"></li>
+          <li data-target="#carousel-example-2" data-slide-to="3"></li>
+          <li data-target="#carousel-example-2" data-slide-to="4"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="view">
+              <img class="d-block w-100" src="https://i.postimg.cc/28LYShXN/IMG-20200421-WA0007.jpg" alt="First slide" style="width:100px;height:600px;">
+              <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive"></h3>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img class="d-block w-100" src="https://i.postimg.cc/C1mnRXXP/IMG-20200423-WA0045-1.jpg" alt="Second slide" style="width:100px;height:600px;">
+              <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive" style="text-shadow: 1px 2px black;">Food Distribution</h3>
+              <p style= "color:lightgoldenrodyellow;text-shadow: 1px 2px black;font-size: large;"><b> Many children are also incapable of meeting their nutritional needs. Thus to fill up their stomachs, we regularly pack some food from our hostel mess and distribute it among children. We feel really happy when we witness the children's empty stomachs getting filled. many blissful moments are captured and many relationships with children are built during this time.</b></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img class="d-block w-100" src="https://i.postimg.cc/Bbc2NjhG/20200421-141711.jpg" alt="Third slide" style="width:100px;height:600px;">
+              <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive" style="text-shadow: 1px 2px black;">Making Children Par with Others</h3>
+              <p style="color:lightgoldenrodyellow;text-shadow: 1px 2px black;font-size: large;"><b>Apart from the prescribed syllabus, we prepare children for several competitive examinations such as NTSE, UPSC, GPSC, Navodaya. We also strive for giving them a National level platform where they can showcase their academic strength We make children participate in dancing performances, drawing, competitions, workshops etc.organised by our institute. This also provides the platform and an opportunity to show their talents. Several reviews and appreciation from the audience and encourage them to keep going.</b></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img class="d-block w-100" src="https://i.postimg.cc/4yzQMLxq/20200421-141738-2.jpg" alt="Third slide" style="width:100px;height:600px;">
+              <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive" style="text-shadow: 1px 2px black;">Celebrating With Children</h3>
+              <p style="color:lightgoldenrodyellow;text-shadow: 1px 2px black;font-size: large;"><b>We also celebrate our birthdays with children and offer them notebooks stationary food packets etc.Also we are gifted with hand made birthday cards from the children The children are much eager to spend blissful moments with us. We thus try celebrating many festivals with them. This is the best time when our bonding with the children strengthens. We really feel elated when we spend a festival time with them</b></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img class="d-block w-100" src="https://i.postimg.cc/bwD53jRn/IMG-20200423-WA0043.jpg" alt="Third slide" style="width:100px;height:600px;">
+              <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive" style="text-shadow: 1px 2px black;">Extending Help</h3>
+              <p style="color:lightgoldenrodyellow;text-shadow: 1px 2px black;font-size: large;"><b>We Provide Our Best Possible help to our children</b></p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+      </div>
+       <center><section id="features">
+        <div class="row">
+             <div class="col">
+               <img  src="https://img.pngio.com/collection-of-free-transparent-logo-book-download-on-ui-ex-png-books-black-and-white-400_400.png"></img>
+                 <h4>Education</h4>
+                 <q>Provides education to those who can't afford</q>
+            </div>
+            <div class="col">
+              <img src="https://www.shareicon.net/data/512x512/2016/02/27/725856_people_512x512.png"></img>
+              <h4>Children</h4>
+              <q>children are the future </q>
+            </div>
+            <div class="col">
+              <img src="https://cdn4.iconfinder.com/data/icons/significon/512/Significon-Bulb-512.png"></img>
+              <h4>enlightment</h4>
+              <q>Education is the powerful weapon to change the world</q>
+            </div>
+            <div class="col">
+                <img src="https://image.flaticon.com/icons/png/512/27/27705.png"></img>
+                <h4>NGO</h4>
+                <q>Edignite is a NGO group</q>
+                </div>
+            </div>
+         </div>
+    </section></center>
+    <footer class="page-footer font-small stylish-color-dark pt-4" style="background-color: lightgoldenrodyellow;;" id="contact1">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto">
+      
+              <!-- Content -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact Us!</h5>
+              <p>We provide help by supplying educational materials and videos,Do join as volunteers by filling up the info,please do follow us in social media platforms</p>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Youtube links</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://www.youtube.com/channel/UCoa_orr8SJHe4Z9Rl3ukDNQ!">youtube channel</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/playlist?list=PL4_vh0b5AD6fvlX6RKcoSqWk0HSMRhU4d!">Social India</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/playlist?list=PL4_vh0b5AD6fZvZbxO4qaNPGmmkn4DEf_!"> JEE Physics</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/playlist?list=PL4_vh0b5AD6fKg0QdSVJhp-xb-jZGgpG8">JEE Maths</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+      
+              <!-- Links -->
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Whatsapp</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://chat.whatsapp.com/FiYIwoj7lqs1vRzEVdPn19">Life Coach</a>
+                </li>
+                <li>
+                  <a href="https://chat.whatsapp.com/GSQFpH0iwdc8HYErzxd9JE">Edignite Medical</a>
+                </li>
+                <li>
+                  <a href="https://chat.whatsapp.com/JnvPVS5LZCd0tOulueNDmf">Edignite MSC/B.Tech</a>
+                </li>
+                <li>
+                  <a href="https://chat.whatsapp.com/Evy4diZYWufJMhjFuTTOGx">Edignite social</a>
+                </li>
+                <li>
+                  <a href="https://chat.whatsapp.com/JiBWDWYu1zz2lCmDyOGJm5">Edignite School</a>
+                </li>
+                <li>
+                  <a href="https://chat.whatsapp.com/FoXHJyRIHEs8B5iK3qnOzT">Edignite awareness</a>
+                </li>
+              </ul>
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none">
+      
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+              <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Social media</h5>
+      
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://www.instagram.com/invites/contact/?i=1uc91cbq7mh66&utm_content=6wctbpu">Instagram</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/ed-ignite-6767071a3">Linkedin</a>
+                </li>
+                <li>
+                  <a href="https://en.wikipedia.org/wiki/Edignite">Wikipedia</a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/Edignite1?s=08">Twitter</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <ul class="list-unstyled list-inline text-center py-2">
+          <li class="list-inline-item">
+            <h5 class="mb-1">Join As Volunteer</h5>
+          </li>
+          <li class="list-inline-item">
+            <a href="compose.html" class="btn btn-danger btn-rounded">Join up!</a>
+          </li>
+        </ul>
+        <hr>
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="https://mdbootstrap.com/">@Edignite</a>
+        </div>
+      </footer>
+</body>
+</html>
