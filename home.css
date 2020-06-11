@@ -7,6 +7,7 @@
 body{
      background-color: #fdb801;
 }
+
 #header1{
      padding-top: 250px;
      padding-bottom: 250px;
@@ -110,7 +111,7 @@ nav ul li a{
      color: white;
 }
 a:hover{
-     background-color:yellow;
+     background-color:rgba(0,0,0,0.2);
 }
 #menu{
      width:50px;
@@ -545,11 +546,11 @@ p big i em b{
      font-size: 17px;
 }
 .topnav a:hover {
-     background-color: yellow;
+     background-color: rgba(0,0,0,0.2);
      color: rebeccapurple;
 }
 .topnav a.active {
-     background-color: yellow;
+     background-color: rgba(0,0,0,0.2);
      color:white;
 }
 mark h1{
@@ -707,7 +708,7 @@ h2 big{
    }
    
    #side a:hover, .dropdown-btn:hover {
-     color: yellow;
+     color: rgba(0,0,0,0.2);
    }
    .main {
      margin-left: 200px; 
@@ -715,7 +716,7 @@ h2 big{
      padding: 0px 10px;
    }
    .active {
-     background-color: yellow;
+     background-color: rgba(0,0,0,0.2);
      color: white;
    }
    .dropdown-container {
