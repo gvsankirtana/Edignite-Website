@@ -7,9 +7,10 @@
 body{
      background-color: #fdb801;
 }
+
 #header1{
-     padding-top: 120px;
-     padding-bottom: 120px;
+     padding-top: 250px;
+     padding-bottom: 250px;
      background-image: url("https://i.postimg.cc/bwD53jRn/IMG-20200423-WA0043.jpg");
      background-repeat: no-repeat;
      background-color: rebeccapurple;
@@ -35,7 +36,7 @@ body{
 .header-text{
      max-width: 340px;
      margin-top: 50px;
-     margin-left: 170px;
+     margin-left: 140px;
      text-shadow: 3px 2px black;
 }
 h1{
@@ -110,7 +111,7 @@ nav ul li a{
      color: white;
 }
 a:hover{
-     background-color:yellow;
+     background-color:rgba(0,0,0,0.2);
 }
 #menu{
      width:50px;
@@ -545,11 +546,11 @@ p big i em b{
      font-size: 17px;
 }
 .topnav a:hover {
-     background-color: yellow;
+     background-color: rgba(0,0,0,0.2);
      color: rebeccapurple;
 }
 .topnav a.active {
-     background-color: yellow;
+     background-color: rgba(0,0,0,0.2);
      color:white;
 }
 mark h1{
@@ -672,7 +673,6 @@ mark h1{
      display:flex;
      align-items: center;
      flex-wrap: wrap;
-     background-image: url("https://i.postimg.cc/9QSJFwSK/IMG-20200412-WA0008.jpg");
      background-color: rebeccapurple;
      background-position: center;
      background-size: 1240px;
@@ -684,7 +684,7 @@ mark h1{
      display:flex;
      align-items: center;
      flex-wrap: wrap;
-     background-image:url("https://i.postimg.cc/mTq4Gphs/edignitelogo-png.jpg");
+     background-color: rebeccapurple;
      background-position: center;
      background-size: contain;
      text-transform: uppercase;
@@ -708,7 +708,7 @@ h2 big{
    }
    
    #side a:hover, .dropdown-btn:hover {
-     color: yellow;
+     color: rgba(0,0,0,0.2);
    }
    .main {
      margin-left: 200px; 
@@ -716,7 +716,7 @@ h2 big{
      padding: 0px 10px;
    }
    .active {
-     background-color: yellow;
+     background-color: rgba(0,0,0,0.2);
      color: white;
    }
    .dropdown-container {
