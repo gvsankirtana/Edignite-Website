@@ -1,4 +1,5 @@
 <?php
+/* takes in the data to server using post*/
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$number = $_POST['number'];
@@ -13,8 +14,8 @@
 		echo "$conn->connect_error";
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
-		$stmt = $conn->prepare("insert into registration(name, email, number, occ, work, intro,hob) values(?, ?, ?, ?, ?, ?,?)");
-		$stmt->bind_param("ssssssi",$name,$email,$number,$occ,$work,$intro,$hob);
+		$stmt = $conn->prepare("insert into registration(name, email, number, occ, work, intro,hob) values(?, ?, ?, ?, ?, ?,?)");//uses mysql object methods
+		$stmt->bind_param("ssssssi",$name,$email,$number,$occ,$work,$intro,$hob);//bind_param object
 		$execval = $stmt->execute();
 		echo $execval;
 		echo '<!DOCTYPE html>
