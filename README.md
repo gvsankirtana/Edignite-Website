@@ -1,2 +1,2 @@
 # EdigniteNgo-Website
-website created for Edignite non-profit NGO .
+website created for Edignite non-profit NGO ..
